@@ -37,3 +37,22 @@
     padding-right: 16px;
   }
   
+
+  /* bag and heart icon*/
+.relative {
+  display: flex;
+  align-items: center;
+}
+
+.pr-4 {
+  margin-right: 0; 
+}
+
+/* girl running and jordan 4 */
+.image-container {
+  display: flex;
+}
+
+.image-container img {
+  margin-right: 20px; /* Adjust the amount of gap between images as needed */
+}
