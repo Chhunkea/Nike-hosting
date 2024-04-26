@@ -1,24 +1,22 @@
-// <uniquifier>: Use a unique and descriptive class name
-
 /* logo nike */
 .logo-container {
   position: absolute;
-  left: 20px; /* Adjust the distance from the left edge */
+  left: 20px; /* Adjust the distance from the left edge */ 
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); 
 }
 
+/* Adjust font sizes for responsiveness */
+.text-5xl {
+  font-size: 3rem; /* Adjust as needed */
+}
 
-/* text */
-.text-center {
-    /* font-family: "Helvetica Now Text Medium"; */
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "BLED" 0,
-      "SCAN" 0;
+@media (min-width: 768px) {
+  .text-8xl {
+      font-size: 6rem; /* Adjust as needed */
   }
+}
+
 
   /* Scrolling */
   .scroll-container {
@@ -36,10 +34,14 @@
     flex: 0 0 auto;
     padding-right: 16px;
   }
-  
+
+  .snap-start img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Allow images to scale proportionally */
+  }
   
 
-  /* bag and heart icon*/
+/* bag and heart icon*/
 .relative {
   display: flex;
   align-items: center;
@@ -57,6 +59,7 @@
 .swiper1-button-prev,
 .swiper1-button-next {
 position: absolute;
+display:none;
 top: 1px;
 right: 4px;
 width: 40px;
@@ -95,32 +98,6 @@ right: 50px;
   .swiper1-button-next {
       right: calc(50% - 45px); 
   }
-}
-
-
-
-/* girl running and jordan 4 */
-.image-container {
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-}
-
-.image-overlay {
-  position: relativ3;
-  width: 50%;
-}
-
-.overlay-text {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white; 
-}
-
-.image-overlay img {
-  width: 100%;
-  height: auto;
 }
 
 
@@ -301,10 +278,7 @@ color: white;
 
 
 /* bag and heart icon*/
-.relative {
-display: flex;
-align-items: center;
-}
+
 
 .pr-4 {
 margin-right: 0; 
@@ -358,7 +332,7 @@ color: white;
 }
 }
 
-/* Nike membership */
+/* Nike membership and all image container*/
 .image-container {
   display: flex;
   padding: 15px;
@@ -366,16 +340,16 @@ color: white;
 
 .image-overlay {
   position: relative;
-  width: 60%;
+  width: 100%;
   height: 60%;
   padding: 5px;
- 
 }
 
 .overlay-text {
   position: absolute;
-  bottom: 35px;
-  left: 50px;
+  bottom: 20px;
+  left: 20px;
+  max-width: calc(100% - 40px);
   color: black; /* Change text color to black */
 }
 
@@ -396,7 +370,7 @@ color: white;
 .footer1 {
   text-align: left;
   padding: 100px;
-  background-textor: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 
@@ -577,5 +551,4 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 
