@@ -11,13 +11,6 @@
   font-size: 3rem; /* Adjust as needed */
 }
 
-@media (min-width: 768px) {
-  .text-8xl {
-      font-size: 6rem; /* Adjust as needed */
-  }
-}
-
-
   /* Scrolling */
   .scroll-container {
     overflow-x: hidden;
