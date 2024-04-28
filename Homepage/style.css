@@ -6,10 +6,17 @@
   transform: translateY(-50%); 
 }
 
-/* Adjust font sizes for responsiveness */
-.text-5xl {
-  font-size: 3rem; /* Adjust as needed */
+/* Brooks-big-text */
+@media (max-width: 768px) {
+  .big-text-brook {
+    font-size: 4rem; /* Set font size to text-lg for smaller screens */
+  }
+  .big-text-brook-top {
+    font-size: 4rem;
+    margin-top: -30px;
+  }
 }
+
 
   /* Scrolling */
   .scroll-container {
@@ -32,7 +39,16 @@
     max-width: 100%; /* Make images responsive */
     height: auto; /* Allow images to scale proportionally */
   }
-  
+  @media (max-width: 768px) {
+    .snap-x {
+      scroll-padding: 0 50%; 
+    }
+    
+    .snap-start img {
+      max-width: 400px; /* Set max width to 400px when zoomed in */
+      height: 420px; /* Set height to 420px when zoomed in */
+    }
+  }
 
 /* bag and heart icon*/
 .relative {
@@ -51,27 +67,27 @@
 
 .swiper1-button-prev,
 .swiper1-button-next {
-position: absolute;
-display:none;
-top: 1px;
-right: 4px;
-width: 40px;
-height: 40px;
-background-color: #D9D9D9;
-color: white;
-border-radius: 50%;
-cursor: pointer;
-z-index: 10;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-right: 10px;
+  position: absolute;
+  top: 1px;
+  right: 4px;
+  width: 40px;
+  height: 40px;
+  background-color: #D9D9D9;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
 }
 
 
 .swiper1-button-next {
-right: 50px;
+  right: 50px;
 }
+
 
 .swiper1-button-prev button,
 .swiper1-button-next button {
@@ -82,127 +98,31 @@ right: 50px;
   appearance: none; /* Remove default button styling */
   color: white;
 }
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .swiper1-button-prev {
-      left: calc(50% - 45px); 
-  }
 
-  .swiper1-button-next {
-      right: calc(50% - 45px); 
-  }
+/* classic horizontal-scroll */
+.horizontal-scroll-container {
+  width: 100%; /* Set the width of the container */
+  max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Ensure images stay in a single line */
 }
 
-
-/* test shoes clicking */
-.shoes-slider {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.swiper-slide img {
-  width: 100%;
+.horizontal-scroll-container img {
+  display: inline-block; /* Display images in a line */
+  max-width: 100%; /* Ensure images don't exceed the container width */
   height: auto;
-}
-
-.swiper-container {
-  padding: 20px;
-}
-
-.swiper-wrapper {
-  display: flex; /* Ensure horizontal layout */
-  flex-wrap: nowrap; /* Prevent wrapping to new lines */
-}
-
-.swiper-slide {
-  width: auto;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
   margin-right: 10px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  background-color: #000000;
-  color: white;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-button-prev {
-  left: 45px;
-}
-
-.swiper-button-next {
-  right: 55px;
-}
-
-/* Responsive Styles shoes*/
 @media (max-width: 768px) {
-  .shoes-slider {
-      margin: 0 auto;
-      width: 90%;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-      font-size: 20px;
-      width: 25px;
-      height: 25px;
+  .horizontal-scroll-container img {
+    width: 340px; /* Set the width to 100% for smaller screens */
+    max-width: none; /* Remove the maximum width restriction */
+    margin-right: 0; /* Remove margin between images */
   }
 }
 
-@media (max-width: 576px) {
-  .swiper-slide {
-    margin-right: 5px; 
-  }
-  }
-
-@media (max-width: 576px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-      font-size: 16px;
-      width: 20px;
-      height: 20px;
-  }
-}
-
-
- /* Scrolling shop by sport */
- .scroll-container {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-.snap-x {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth; /* Enable smooth scrolling */
-}
-
-.snap-start {
-  flex: 0 0 auto;
-  padding-right: 16px;
-}
-
-
-/* bag and heart icon*/
-.relative {
-display: flex;
-align-items: center;
-}
-
-.pr-4 {
-margin-right: 0; 
-}
 
 /* button for shop by sport */
 .shop-section {
@@ -241,38 +161,9 @@ padding: 0;
 appearance: none; /* Remove default button styling */
 color: white;
 }
-/* Responsive Styles */
-@media (max-width: 768px) {
-.swiper2-button-prev {
-    left: calc(50% - 45px); 
-}
-
-.swiper2-button-next {
-    right: calc(50% - 45px); 
-}
-}
-
- /* Scrolling shop by sport */
- .scroll-container {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-.snap-x {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth; /* Enable smooth scrolling */
-}
-
-.snap-start {
-  flex: 0 0 auto;
-  padding-right: 16px;
-}
 
 
 /* bag and heart icon*/
-
-
 .pr-4 {
 margin-right: 0; 
 }
@@ -314,21 +205,10 @@ padding: 0;
 appearance: none; /* Remove default button styling */
 color: white;
 }
-/* Responsive Styles */
-@media (max-width: 768px) {
-.swiper3-button-prev {
-    left: calc(50% - 45px); 
-}
-
-.swiper3-button-next {
-    right: calc(50% - 45px); 
-}
-}
 
 /* Nike membership and all image container*/
 .image-container {
-  display: flex;
-  padding: 15px;
+  display:flex;
 }
 
 .image-overlay {
@@ -342,20 +222,34 @@ color: white;
   position: absolute;
   bottom: 20px;
   left: 20px;
-  max-width: calc(100% - 40px);
   color: black; /* Change text color to black */
-}
+ }
 
 .overlay-text button {
   background-color: white; /* Change button background color */
-  color: black; /* Change button text color */
-  border-radius: 20px; /* Add border-radius to button */
-  padding: 8px 16px; /* Add padding to button */
-}
+  color: black; /*Change button text color  */
+  border-radius: 20px; /*Add border-radius to button */ 
+  padding: 8px 16px; /*Add padding to button  */
+} 
 
 .image-overlay img {
   width: 100%;
   height: auto;
+}   
+
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: column; /* Change flex direction to column */
+  }
+
+  .image-overlay,
+  .overlay-text {
+    width: 100%; /* Set width to 100% for smaller screens */
+    left: 0; /* Reset left position */
+  }
+  .overlay-text {
+    margin-left: 15px; /* Add margin-left for text on smaller screens */
+  }
 }
 
 
@@ -405,27 +299,18 @@ color: white;
 
 @media screen and (max-width: 768px) {
   .row {
-    flex-direction: column; /* Change flex direction to column on smaller screens */
+    flex-direction:row ; /* Change flex direction to column on smaller screens */
+    justify-content:left;
+    margin-right: 10px;
+    margin-left: 20px;
   }
 
   .text {
     max-width: 100%;
     margin-right: 0;
-  }
-
-  .text p {
-    padding: 0px 10px; /* Adjust padding for smaller screens */
+    margin-left: 0;
   }
 }
-
-@media screen and (max-width: 768px) {
-  /* CSS for tablets and smaller devices */
-}
-
-@media screen and (max-width: 576px) {
-  /* CSS for smartphones and smaller devices */
-}
-
 
 /* Footer 2 */
 body {
