@@ -1,0 +1,5 @@
+REVIEWBOARD_URL = "https://review.clp.kr/"
+REPOSITORY = "CyberNexus/Kim-Chhunkea/Nike-Clone"
+REPOSITORY_TYPE = "git"
+BRANCH = "testing"
+LAND_DEST_BRANCH = "testing"

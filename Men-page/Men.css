@@ -178,15 +178,15 @@
   .popular-text {
     margin-bottom: 12px;
     padding-top: 2px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 48px;
+    padding-right: 48px;
   }
 
   /* horizontal-image-with-text-below */
   .horizontal-scroll-container-text {
     display: flex; /* Display flex for horizontal layout */
     overflow-x: auto; /* Enable horizontal scrolling */
-    padding-left: 24px; /* Add left padding to the container */
+    padding-left: 48px; /* Add left padding to the container */
   }
   
   .image-with-text {
@@ -237,7 +237,7 @@
 
 
   .member-text-image {
-    padding-left: 45px;
+    padding-left: 48px;
     padding-bottom: 30px;
   }
 
@@ -284,6 +284,7 @@
   
     .image-member,
     .member-text {
+      padding-right: 30px;
       width: 100%; /* Set width to 100% for smaller screens */
       left: 0; /* Reset left position */
     }
@@ -296,6 +297,7 @@
   .footer1-men {
     margin-top: 48px;
     margin-bottom: 56px;
+    font-size: 12px;
 }
 
 .outer-container {
@@ -331,3 +333,101 @@
     margin-bottom: 12px; 
 }
 
+@media (max-width: 768px) {
+  .footer-men-margin {
+      display: flex;
+      flex-direction: column;
+      align-items:start;
+      font-size: 10px;
+      margin-left: 50px;
+      margin-right: 20px;
+      gap: 10px;
+      margin-top: -50px;
+      top: 0;
+  }
+  
+  .footer-men-margin ul li {
+      display: none; /* Hide li elements */
+  }
+}
+
+/* Footer2 */
+.footer2-men {
+  background-color: black;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: -6px;
+  margin-right: -6px;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.footer2-container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+}
+
+.footer2-class {
+  margin-right: 30px;
+}
+
+.footer2-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer2-li {
+  padding: 6px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+/* svg icons */
+.svg-icon-footer2 {
+  display: flex;
+  margin-left: 20px;
+}
+
+
+.svg-icon-footer2 ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    color: gray;
+    padding: 0;
+    margin: 0;
+}
+
+/* United state */
+.privacy {
+  margin-top: 48px;
+}
+
+.down-footer2 {
+  color: white;
+  display: flex;
+  padding-left: 8px;
+  padding-right: 6px;
+  padding-top: 12px;
+  font-size: 16px;
+}
+
+/* footer2-right */
+.footer2-bottom-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer2-bottom-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer2-bottom-right li {
+  margin-left: 40%;
+}
