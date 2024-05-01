@@ -208,6 +208,8 @@ color: white;
 
 /* Nike membership and all image container*/
 .image-container {
+  padding-left: 24px;
+  padding-right: 24px;
   display:flex;
 }
 
@@ -254,65 +256,49 @@ color: white;
 
 
 /* Footer 1 */
-.footer1-men {
-  margin-top: 48px;
+.footer1 {
+  margin-top: 84px;
   margin-bottom: 56px;
   font-size: 12px;
 }
 
-.outer-container {
-  margin-left: 179.500px; /* Apply left margin */
-  margin-right: 179.500px; /* Apply right margin */
-}
 
-.footer-men-margin {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 20px; 
-  justify-content: center; 
-  margin-left: 179.500px; 
-  margin-right: 179.500px; 
-}
-
-.footer-men-margin > div {
+.footer-margin > div {
   text-align: left; 
   color: gray;
 }
 
-.footer-men-margin h4 {
+.footer-margin h4 {
   margin-bottom: 24px; 
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
-.footer-men-margin ul {
+.footer-margin ul {
   list-style: none;
   padding: 0; 
 }
 
-.footer-men-margin ul li {
+.footer-margin ul li {
   margin-bottom: 12px; 
 }
 
 @media (max-width: 768px) {
-.footer-men-margin {
+.footer-margin {
     display: flex;
     flex-direction: column;
     align-items:start;
-    font-size: 10px;
-    margin-left: 50px;
-    margin-right: 20px;
-    gap: 10px;
-    margin-top: -50px;
-    top: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
 }
 
-.footer-men-margin ul li {
+.footer-margin ul li {
     display: none; /* Hide li elements */
 }
 }
 
-@media (min-width:1280px) {
-.footer-men-margin {
+@media (min-width:800px) {
+.footer-margin {
   display: flex;
   justify-content: center;
   font-size: 12px;
@@ -328,7 +314,7 @@ color: white;
 }
 
 /* Footer2 */
-.footer2-men {
+.footer2 {
 background-color: black;
 padding-top: 40px;
 padding-left: 40px;
@@ -458,4 +444,11 @@ margin-top: 2px;
 .footer-links-column {
   display: none;
 }
+}
+
+/* iphone12-pro */
+@media (max-width: 390px) and (max-height: 844px) {
+  .svg-icon-footer2 {
+    display: none;
+  }
 }

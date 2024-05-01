@@ -37,6 +37,7 @@
       margin-left: 280px;
       font-size: 28px;
       padding-right: 20px;
+      padding-left: 10px;
       margin-top: 20px;
     }
     
@@ -177,12 +178,19 @@
     .green-color {
       background-color: green;
     }
+    .yellow-color {
+      background-color: yellow;
+    }
     .grey-color {
       background-color: gray;
     }
     .pink-color {
       background-color: pink;
     }
+    .multi-color {
+      background: radial-gradient(#f2f2f2 20%, transparent 20%), radial-gradient(#1a1919 20%, transparent 20%), #2b2323;
+    }
+    
   
     /* image */
     .image-container {
@@ -215,20 +223,22 @@
   }
   
   
-  /* For screens 768px and below */
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 1080px) {
     .sidenav {
-        width: 100%;
-        height: auto;
-        position: static;
-        padding-top: 60px;
+      display: none;
     }
-  
     .image-main {
-        margin-top: 0;
+      margin-left: 10px;
+    }
+  }
+ 
+  /* iphone 12pro */
+  @media (max-width: 390px) and (max-height: 844px) {
+    .new-release {
+      display: none;
+    }
+    .big-container-nav {
+      display: none;
     }
   }
   
-  body .h1-hello {
-    color: red;
-  }
