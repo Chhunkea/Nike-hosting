@@ -50,22 +50,29 @@
     margin: 0 0 12px; /* Bottom margin 12px, top and sides default to 0 */
   }
   /* image */
-.scroll-x {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent grid items from wrapping */
-    padding-left: 48px; /* Left padding */
-}
+  .scroll-x {
+      overflow-x: auto; /* Enable horizontal scrolling */
+      white-space: nowrap; /* Prevent grid items from wrapping */
+      padding-left: 48px; /* Left padding */
+  }
 
 /* Responsive shop-essential */
 @media (max-width: 768px) {
-    .three-women .women-picture img {
-      width: 427.5px;
+    .three-women  {
+      width: 100%;
       height: auto;
+      flex-direction: column;
     }
   
-    /* Reduce the font size of the text */
-    .three-women .text-beside {
-      font-size: 18px;
+    .three-women-imgae {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .anchor-underline {
+      margin-bottom: 20px;
+      margin-top: -2px;
+      padding-bottom: 10px;
     }
   }
   

@@ -242,3 +242,9 @@
     }
   }
   
+  /* hide filter 768px */
+  @media (max-width: 768px) {
+    .hide-filter-container {
+      display: none;
+    }
+  }

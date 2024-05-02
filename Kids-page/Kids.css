@@ -1,0 +1,83 @@
+.nav-kid {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 26px 0px 34px;
+    margin: 0px 48px;
+  }
+  
+  .nav-kid h1 {
+    margin-right: auto; /* Push the h1 element to the left */
+  }
+
+
+  .accessories-kid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex: 1; /* Take up remaining space */
+  }
+  
+  .accessories-kid ul {
+    display: flex;
+    align-items: center; 
+    margin-right: 20px;
+  }
+
+  .nav-kidpic {
+    top: 0;
+    margin: 48px;
+  }
+
+
+  .text-nav-kid {
+    margin: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+  }
+
+  .text-kid-center {
+    text-align: center;
+  }
+
+  /* four kids image */
+  .four-kid-imgae {
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-top: 84px;
+  }
+
+
+  .flexbox-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left-top, .left-bottom, .right-top, .right-bottom {
+    flex: 1 1 calc(50% - 5px); /* Each item takes half of the container width minus gap */
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+/* text-button */
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: black; /* Change text color to black */
+   }
+  
+  .overlay-text button {
+    background-color: rgb(0, 0, 0); /* Change button background color */
+    color: rgb(255, 255, 255); /*Change button text color  */
+    border-radius: 20px; /*Add border-radius to button */ 
+    padding: 8px 16px; /*Add padding to button  */
+  } 
+
+  .image-overlay {
+    position: relative;
+  }
