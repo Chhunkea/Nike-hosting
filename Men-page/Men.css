@@ -56,8 +56,10 @@
     gap: 10px; /* Gap between columns */
     padding-left: 48px; /* Left padding */
     padding-right: 48px;
+    overflow-x: auto;
   }
   
+
   .grid-item {
     padding-bottom: 30px;
   }
@@ -70,6 +72,24 @@
   .text-beside {
     margin-top: 16px;
   }
+  @media (max-width: 768px) {
+    .shop-essential {
+      padding: 8px 48px; /* Increase padding for better spacing */
+    }
+  
+    .grid-item img {
+      width: 300px; /* Ensure images take up full width */
+      height: 300px; /* Maintain aspect ratio */
+      max-width: 300px; /* Limit maximum width of images */
+    }
+  
+    .text-beside {
+      margin-top: 10px; /* Adjust margin for better spacing */
+      font-size: 18px; /* Increase font size */
+    }
+  }
+  
+
   
   /* marathon-man */
   .marathon-text {
@@ -100,6 +120,7 @@
     max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
     overflow-x: auto; /* Enable horizontal scrolling */
     white-space: nowrap; /* Ensure images stay in a single line */
+    margin-left: 48px;
   }
   
   .horizontal-scroll-container img {
@@ -134,13 +155,19 @@
     position: relative;
     width: 100%;
     padding: 5px;
+    margin-left: -5px;
   }
   
+  .brooks-fav-text {
+    margin-bottom: 12px;
+  }
+
   .brook-texts {
     position: absolute;
     bottom: 20px;
     left: 20px;
     color: black; /* Change text color to black */
+   
    }
   
   .brook-texts button {
@@ -209,17 +236,21 @@
   @media (max-width: 768px) {
     .horizontal-scroll-container-text {
       overflow-x: auto;
-      padding-left: 0; /* Remove left padding on smaller screens */
+      padding-left: 48px; /* Remove left padding on smaller screens */
     }
   
     .image-with-text {
-      padding-left: 24px; 
+      margin-left: 5px;
       margin-right: 0; 
     }
   
     .image-with-text img {
       width: 340px; /* Set width to 340px on smaller screens */
       max-width: none; /* Remove maximum width restriction */
+    }
+
+    .popular-text {
+      margin-left: 5px;
     }
   }
 
@@ -270,6 +301,7 @@
   .image-member img {
     width: 100%;
     height: auto;
+    margin-left: -5px;
   }   
   
   .overflow-scroll-x {
@@ -290,6 +322,10 @@
     }
     .member-text {
       margin-left: 15px; /* Add margin-left for text on smaller screens */
+    }
+
+    .image-member {
+      margin-left: -1px;
     }
   }
   

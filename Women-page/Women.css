@@ -55,92 +55,72 @@
       white-space: nowrap; /* Prevent grid items from wrapping */
       padding-left: 48px; /* Left padding */
   }
-
-/* Responsive shop-essential */
-@media (max-width: 768px) {
-    .three-women  {
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-    }
   
-    .three-women-imgae {
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
 
-    .anchor-underline {
-      margin-bottom: 20px;
-      margin-top: -2px;
-      padding-bottom: 10px;
-    }
+  .grid-container {
+      font-size: 16px; 
   }
-  
 
-.grid-container {
-    font-size: 16px; 
-}
+  .grid-item {
+      display: inline-block; /* Display grid items inline */
+      width: 548.5px; /* Width of each grid item */
+      height: 588.5px; /* Height of each grid item */
+  }
 
-.grid-item {
-    display: inline-block; /* Display grid items inline */
-    width: 548.5px; /* Width of each grid item */
-    height: 588.5px; /* Height of each grid item */
-}
+  .text-beside {
+      margin-top: 12px;
+  }
 
-.text-beside {
-    margin-top: 12px;
-}
-
-/* two-girl-image */
-.image-container {
-  padding-left: 48px;
-  padding-right: 48px;
-  display:flex;
-  justify-content: space-between;
-}
-
-.image-overlay {
-  position: relative;
-  /* width: 100%;
-  height: 60%;
-  padding: 5px; */
-  flex: 1;
-  padding: 5px;
-}
-
-.overlay-text {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: black; /* Change text color to black */
- }
-
-.overlay-text button {
-  background-color: white; /* Change button background color */
-  color: black; /*Change button text color  */
-  border-radius: 20px; /*Add border-radius to button */ 
-  padding: 8px 16px; /*Add padding to button  */
-} 
-
-.image-overlay img {
-  width: 100%;
-  height: auto;
-}   
-
-@media (max-width: 768px) {
+  /* two-girl-image */
   .image-container {
-    flex-direction: column; /* Change flex direction to column */
+    padding-left: 48px;
+    padding-right: 48px;
+    display:flex;
+    justify-content: space-between;
   }
 
-  .image-overlay,
-  .overlay-text {
-    width: 100%; /* Set width to 100% for smaller screens */
-    left: 0; /* Reset left position */
+  .image-overlay {
+    position: relative;
+    /* width: 100%;
+    height: 60%;
+    padding: 5px; */
+    flex: 1;
+    padding: 5px;
   }
+
   .overlay-text {
-    margin-left: 15px; /* Add margin-left for text on smaller screens */
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: black; /* Change text color to black */
   }
-}
+
+  .overlay-text button {
+    background-color: white; /* Change button background color */
+    color: black; /*Change button text color  */
+    border-radius: 20px; /*Add border-radius to button */ 
+    padding: 8px 16px; /*Add padding to button  */
+  } 
+
+  .image-overlay img {
+    width: 100%;
+    height: auto;
+  }   
+
+  @media (max-width: 768px) {
+    .image-container {
+      flex-direction: column; /* Change flex direction to column */
+    }
+
+    .image-overlay,
+    .overlay-text {
+      width: 100%; /* Set width to 100% for smaller screens */
+      left: 0; /* Reset left position */
+    }
+    .overlay-text {
+      margin-left: 15px; /* Add margin-left for text on smaller screens */
+    }
+  }
 
 
 /* classic-shoes */
@@ -162,7 +142,7 @@
     max-width: 100%; /* Ensure images don't exceed the container width */
     height: auto;
     object-fit: cover; /* Maintain aspect ratio and cover the container */
-    margin-right: 10px;
+    margin-right: 2px;
   }
 
   @media (max-width: 768px) {
@@ -196,6 +176,25 @@
     margin-right: 10px;
   }
   
+  /* Responsive More-to-explore */
+  @media (max-width: 768px) {
+    .three-women  {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+    }
+
+    .three-women-imgae {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .anchor-underline {
+      margin-bottom: 20px;
+      margin-top: -2px;
+      padding-bottom: 10px;
+    }
+  }
   
   /* Style for the images inside each picture */
   .women-picture img {
