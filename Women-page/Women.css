@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 
 .nav-women {
     display: flex;
@@ -40,6 +44,57 @@
   .text-women-center {
     text-align: center;
   }
+
+  /* hover on the texts */
+.hover-box {
+  position: absolute;
+  top: 10%; 
+  left: 50%;
+  transform: translate(-50%, 10px);
+  background-color: rgb(255, 255, 255);
+  width:100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+  z-index: 1; 
+}
+
+.hover-down-texts {
+  margin-bottom: 20px;
+  gap: 80px;
+  justify-content: center;
+  display: flex;
+}
+
+
+.flex-item-hover {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item-hover > a {
+  margin-bottom: 10px;
+}
+
+.flex-item-hover-gray {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.flex-item-hover-gray:hover {
+  color: black;
+}
+
+.blurry-all {
+  filter: blur(10%); /* Change the blur value here */
+  transition: filter 0.5s ease;
+  z-index: 1;
+}
+
+.blurry {
+  filter: blur(105%);
+}
+/* end-hover-texts */
 
   /* four-women */
   .four-women-image {
@@ -372,7 +427,7 @@
     .footer2-women {
       background-color: black;
       padding-top: 40px;
-      padding-left: 40px;
+      padding-left: 28px;
       padding-right: 40px;
       margin-left: -6px;
       margin-right: -6px;
@@ -485,6 +540,11 @@
       cursor: pointer;
     }
     
+    .svg-icon-footer2 :hover {
+      fill: white;
+      cursor: pointer;
+    }
+    
     /* Footer2 responsive */
     @media (max-width: 768px) {
       /* Hide li elements */
@@ -492,6 +552,30 @@
         display: none;
       }
     
+      .footer2-women > .container > .footer2-women > .footer2-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .footer2-women > .container > .footer2-women > .footer2-container > .svg-icon-footer2 > ul > li {
+        display: flex;
+        position: relative;
+        left: -10%;
+        top: 20px;
+      }
+
+      /* united-state */
+    .footer2-women > .container > .footer2-women >  .privacy > .down-footer2  {
+    display: flex;
+    flex-direction: column;
+    margin-left: -2vw;
+    margin-bottom: 2vh;
+    }
+
+     /* location */
+     .footer2-women > .container > .footer2-women >  .privacy > .down-footer2 > .svg-location  {
+      display: flex;
+      margin-bottom: 10px;
+    }
       /* Display h4 elements */
       .footer2-class h4 {
         display: block;

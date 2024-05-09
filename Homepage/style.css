@@ -1,4 +1,9 @@
-  /* logo nike */
+body {
+  overflow-x: hidden;
+}
+
+ 
+ /* logo nike */
   .logo-container {
     position: absolute;
     left: 20px; /* Adjust the distance from the left edge */ 
@@ -17,6 +22,57 @@
     }
   }
 
+
+  /* hover on the texts */
+.hover-box {
+  position: absolute;
+  top: 10%; 
+  left: 50%;
+  transform: translate(-50%, 10px);
+  background-color: rgb(255, 255, 255);
+  width:100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+  z-index: 1; 
+}
+
+.hover-down-texts {
+  margin-bottom: 20px;
+  gap: 80px;
+  justify-content: center;
+  display: flex;
+}
+
+
+.flex-item-hover {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item-hover > a {
+  margin-bottom: 10px;
+}
+
+.flex-item-hover-gray {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.flex-item-hover-gray:hover {
+  color: black;
+}
+
+.blurry-all {
+  filter: blur(10%); /* Change the blur value here */
+  transition: filter 0.5s ease;
+  z-index: 1;
+}
+
+.blurry {
+  filter: blur(105%);
+}
+/* end-hover-texts */
 
   /* Scrolling */
   .scroll-container {
@@ -291,12 +347,14 @@
 
   @media (max-width: 768px) {
   .footer-margin {
-      display: flex;
-      flex-direction: column;
-      align-items:start;
-      margin-left: 40px;
-      margin-right: 40px;
-      margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    font-size: 10px;
+    margin-left: 50px;
+    gap: 10px;
+    margin-top: -50px;
+    top: 0;
   }
 
   .footer-margin ul li {
@@ -309,13 +367,10 @@
     display: flex;
     justify-content: center;
     font-size: 12px;
-    margin-left: 50px;
-    margin-right: 20px;
     gap: 50px;
     margin-top: -50px;
     top: 0;
   }
-
 
 
   }
@@ -324,9 +379,8 @@
   .footer2 {
   background-color: black;
   padding-top: 40px;
-  padding-left: 40px;
+  padding-left: 70px;
   padding-right: 40px;
-  margin-left: -6px;
   margin-right: -6px;
   margin-bottom: 16px;
   font-size: 12px;
@@ -432,10 +486,16 @@
   margin-top: 2px;
   }
 
-  .footer2 > .footer2-container > .footer2-class > .footer2-ul > .footer2-li:hover {
+  .footer2 > .container > .footer2-men > .footer2-container > .footer2-class > .footer2-ul > .footer2-li:hover  {
     color: white;
     cursor: pointer;
   }
+
+  .svg-icon-footer2 :hover {
+    fill: white;
+    cursor: pointer;
+  }
+
 
   /* Footer2 responsive */
   @media (max-width: 768px) {
@@ -443,24 +503,60 @@
   .footer2-class li {
     display: none;
   }
+  /* svg */
+  .footer2 > .container > .footer2-men > .footer2-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer2 > .container > .footer2-men > .footer2-container > .svg-icon-footer2 > ul > li {
+    display: flex;
+    position: relative;
+    left: -25%;
+    top: 20px;
+  }
+  
+  /* location */
+  .footer2 > .container > .footer2-men > .footer2-container > .svg-icon-footer2 > .privacy > .down-footer2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* united-state */
+  .footer2 > .container > .footer2-men >  .privacy > .down-footer2  {
+    display: flex;
+    flex-direction: column;
+    margin-left: -8vw;
+    margin-bottom: 2vh;
+  }
 
   /* Display h4 elements */
   .footer2-class h4 {
-    display: block;
+    display: flex;
+    margin-left: -25px;
+    font-size: 0.05rem;
   }
 
   .footer2-bottom-right {
     display: none;
   }
 
+ /* logo-location */
+  .footer2 > .container > .footer2-men >  .privacy > .down-footer2 > .svg-location {
+    display: flex;
+    padding-bottom: 10px;
+  }
+
   .footer-links-column {
     display: none;
-  }
+    }
   }
 
   /* iphone12-pro */
   @media (max-width: 390px) and (max-height: 844px) {
     .svg-icon-footer2 {
+      display: none;
+    }
+    .big-nav-container {
       display: none;
     }
   }
