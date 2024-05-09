@@ -114,20 +114,19 @@
     margin: 0 48px 24px; /* Margin: top 0, right/left 48px, bottom 24px */
   }
   
-  /* carousel */
   .horizontal-scroll-container {
-    width: 100%; /* Set the width of the container */
-    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Ensure images stay in a single line */
+    width: 100%; 
+    max-width: 100%;
+    overflow-x: auto; 
+    white-space: nowrap;
     margin-left: 48px;
   }
   
   .horizontal-scroll-container img {
-    display: inline-block; /* Display images in a line */
-    max-width: 100%; /* Ensure images don't exceed the container width */
+    display: inline-block; 
+    max-width: 50%;
     height: auto;
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    object-fit: cover; 
     margin-right: 10px;
   }
 
@@ -369,6 +368,11 @@
     margin-bottom: 12px; 
 }
 
+.footer-men-margin ul li a:hover {
+  color: black; /* Change color on hover */
+}
+
+
 @media (max-width: 768px) {
   .footer-men-margin {
       display: flex;
@@ -515,6 +519,12 @@
   margin-top: 2px;
 }
 
+.footer2-men > .footer2-container > .footer2-class > .footer2-ul > .footer2-li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+
 /* Footer2 responsive */
 @media (max-width: 768px) {
   /* Hide li elements */
@@ -524,7 +534,9 @@
 
   /* Display h4 elements */
   .footer2-class h4 {
-    display: block;
+    display: flex;
+    margin-left: -25px;
+    font-size: 0.05rem;
   }
 
   .footer2-bottom-right {
@@ -537,7 +549,7 @@
 }
 
 /* iphone12-pro */
-@media (max-width: 390px) and (max-height: 844px) {
+@media (min-width: 390px) and (max-height: 844px) {
   .svg-icon-footer2 {
     display: none;
   }
