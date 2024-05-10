@@ -99,7 +99,7 @@ body {
   position: absolute;
   top: 10%; 
   left: 50%;
-  transform: translate(-50%, 10px);
+  transform: translate(-50%, 0px);
   background-color: rgb(255, 255, 255);
   width:100%;
   visibility: hidden;
@@ -133,17 +133,8 @@ body {
 .flex-item-hover-gray:hover {
   color: black;
 }
+/* end-hover-texts */
 
-.blurry-all {
-  filter: blur(10%); /* Change the blur value here */
-  transition: filter 0.5s ease;
-  z-index: 1;
-}
-
-.blurry {
-  filter: blur(105%);
-}
-  
   /* marathon-man */
   .marathon-text {
     margin-top: 84px;

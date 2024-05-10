@@ -23,12 +23,12 @@ body {
   }
 
 
-  /* hover on the texts */
+/* hover on the texts */
 .hover-box {
   position: absolute;
   top: 10%; 
   left: 50%;
-  transform: translate(-50%, 10px);
+  transform: translate(-50%, 25px);
   background-color: rgb(255, 255, 255);
   width:100%;
   visibility: hidden;
@@ -63,15 +63,23 @@ body {
   color: black;
 }
 
-.blurry-all {
-  filter: blur(10%); /* Change the blur value here */
-  transition: filter 0.5s ease;
-  z-index: 1;
+
+@media (min-width: 1900px) {
+  .hover-box {
+    position: absolute;
+    top: 10%; 
+    left: 50%;
+    transform: translate(-50%, 15px);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+    z-index: 1; 
+  }
 }
 
-.blurry {
-  filter: blur(105%);
-}
+
 /* end-hover-texts */
 
   /* Scrolling */

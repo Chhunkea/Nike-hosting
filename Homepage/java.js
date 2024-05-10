@@ -32,23 +32,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
-
-
-
-// blurry
-
-document.addEventListener('DOMContentLoaded', function() {
-
-    const contentToBlur = document.querySelector('.blurry-all');
-    const hoverTrigger = document.querySelector('.hover-trigger');
-
-    hoverTrigger.addEventListener('mouseenter', function() {
-        contentToBlur.classList.add('blurry');
-    });
-
-    hoverTrigger.addEventListener('mouseleave', function() {
-        contentToBlur.classList.remove('blurry');
-    });
-});
-
