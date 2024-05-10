@@ -2,16 +2,15 @@ body {
   overflow-x: hidden;
 }
 
-
 .nav-men {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center; 
     padding: 26px 0px 0px;
     margin: 0px 48px;
   }
   
   .nav-men h1 {
-    margin-right: auto; /* Push the h1 element to the left */
+    margin-right: auto; 
   }
   
   .accessories-men {
@@ -57,9 +56,9 @@ body {
   /* grid pic */
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    gap: 10px; /* Gap between columns */
-    padding-left: 48px; /* Left padding */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    padding-left: 48px; 
     padding-right: 48px;
     overflow-x: auto;
   }
@@ -79,18 +78,18 @@ body {
   }
   @media (max-width: 768px) {
     .shop-essential {
-      padding: 8px 48px; /* Increase padding for better spacing */
+      padding: 8px 48px; 
     }
   
     .grid-item img {
-      width: 300px; /* Ensure images take up full width */
-      height: 300px; /* Maintain aspect ratio */
-      max-width: 300px; /* Limit maximum width of images */
+      width: 300px;
+      height: 300px; 
+      max-width: 300px; 
     }
   
     .text-beside {
-      margin-top: 10px; /* Adjust margin for better spacing */
-      font-size: 18px; /* Increase font size */
+      margin-top: 10px; 
+      font-size: 18px; 
     }
   }
   
@@ -149,8 +148,8 @@ body {
   .image-men1 img {
     width: 100%;
     height: auto;
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
+    margin: 0; 
+    padding: 0; 
   }
 
   /* classic-shoes */
@@ -176,9 +175,9 @@ body {
 
   @media (max-width: 768px) {
     .horizontal-scroll-container img {
-      width: 340px; /* Set the width to 100% for smaller screens */
-      max-width: none; /* Remove the maximum width restriction */
-      margin-right: 0; /* Remove margin between images */
+      width: 340px; 
+      max-width: none; 
+      margin-right: 0;
     }
   }
 
@@ -209,15 +208,15 @@ body {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: black; /* Change text color to black */
+    color: black;
    
    }
   
   .brook-texts button {
-    background-color: white; /* Change button background color */
-    color: black; /*Change button text color  */
-    border-radius: 20px; /*Add border-radius to button */ 
-    padding: 8px 16px; /*Add padding to button  */
+    background-color: white; 
+    color: black; 
+    border-radius: 20px; 
+    padding: 8px 16px; 
   } 
   
   .image-member img {
@@ -227,16 +226,16 @@ body {
   
   @media (max-width: 768px) {
     .image-container {
-      flex-direction: column; /* Change flex direction to column */
+      flex-direction: column; 
     }
   
     .image-member,
     .member-text {
-      width: 100%; /* Set width to 100% for smaller screens */
-      left: 0; /* Reset left position */
+      width: 100%;
+      left: 0; 
     }
     .member-text {
-      margin-left: 15px; /* Add margin-left for text on smaller screens */
+      margin-left: 15px; 
     }
   }
   
@@ -254,32 +253,32 @@ body {
 
   /* horizontal-image-with-text-below */
   .horizontal-scroll-container-text {
-    display: flex; /* Display flex for horizontal layout */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding-left: 48px; /* Add left padding to the container */
+    display: flex; 
+    overflow-x: auto; 
+    padding-left: 48px; 
   }
   
   .image-with-text {
-    padding-bottom: 30px; /* Add bottom padding to the image */
-    margin-right: 10px; /* Adjust margin between each container */
+    padding-bottom: 30px; 
+    margin-right: 10px;
   }
   
   .image-with-text img {
-    max-width: 676px; /* Set maximum width to maintain aspect ratio */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Add space between image and text */
+    max-width: 676px; 
+    height: auto;
+    margin-bottom: 10px; 
   }
   
   .image-with-text h4,
   .image-with-text h5,
   .image-with-text h3 {
-    text-align: left; /* Align text to the left */
+    text-align: left; 
   }
   
   @media (max-width: 768px) {
     .horizontal-scroll-container-text {
       overflow-x: auto;
-      padding-left: 48px; /* Remove left padding on smaller screens */
+      padding-left: 48px; 
     }
   
     .image-with-text {
@@ -288,8 +287,8 @@ body {
     }
   
     .image-with-text img {
-      width: 340px; /* Set width to 340px on smaller screens */
-      max-width: none; /* Remove maximum width restriction */
+      width: 340px; 
+      max-width: none; 
     }
 
     .popular-text {
@@ -331,14 +330,14 @@ body {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: black; /* Change text color to black */
+    color: black;
    }
   
   .member-text button {
-    background-color: white; /* Change button background color */
-    color: black; /*Change button text color  */
-    border-radius: 20px; /*Add border-radius to button */ 
-    padding: 8px 16px; /*Add padding to button  */
+    background-color: white; 
+    color: black; 
+    border-radius: 20px; 
+    padding: 8px 16px;
   } 
   
   .image-member img {
@@ -349,22 +348,22 @@ body {
   
   .overflow-scroll-x {
     overflow-x: auto;
-    white-space: nowrap; /* Prevent wrapping */
+    white-space: nowrap; 
 }
 
   @media (max-width: 768px) {
     .image-container {
-      flex-direction: column; /* Change flex direction to column */
+      flex-direction: column; 
     }
   
     .image-member,
     .member-text {
       padding-right: 30px;
-      width: 100%; /* Set width to 100% for smaller screens */
-      left: 0; /* Reset left position */
+      width: 100%; 
+      left: 0; 
     }
     .member-text {
-      margin-left: 15px; /* Add margin-left for text on smaller screens */
+      margin-left: 15px; 
     }
 
     .image-member {
@@ -412,7 +411,7 @@ body {
 }
 
 .footer-men-margin ul li a:hover {
-  color: black; /* Change color on hover */
+  color: black; 
 }
 
 
@@ -429,7 +428,7 @@ body {
   }
   
   .footer-men-margin ul li {
-      display: none; /* Hide li elements */
+      display: none; 
   }
 }
 
@@ -443,7 +442,6 @@ body {
     margin-top: -50px;
     top: 0;
 }
-
 
   
 }

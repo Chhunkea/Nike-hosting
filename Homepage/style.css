@@ -2,11 +2,10 @@ body {
   overflow-x: hidden;
 }
 
- 
  /* logo nike */
   .logo-container {
     position: absolute;
-    left: 20px; /* Adjust the distance from the left edge */ 
+    left: 20px; 
     top: 50%;
     transform: translateY(-50%); 
   }
@@ -14,7 +13,7 @@ body {
   /* Brooks-big-text */
   @media (max-width: 768px) {
     .big-text-brook {
-      font-size: 4rem; /* Set font size to text-lg for smaller screens */
+      font-size: 4rem; 
     }
     .big-text-brook-top {
       font-size: 4rem;
@@ -78,8 +77,6 @@ body {
     z-index: 1; 
   }
 }
-
-
 /* end-hover-texts */
 
   /* Scrolling */
@@ -91,7 +88,7 @@ body {
   .snap-x {
     display: flex;
     overflow-x: auto;
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+    scroll-behavior: smooth;
   }
   
   .snap-start {
@@ -100,8 +97,8 @@ body {
   }
 
   .snap-start img {
-    max-width: 100%; /* Make images responsive */
-    height: auto; /* Allow images to scale proportionally */
+    max-width: 100%;
+    height: auto;
   }
   @media (max-width: 768px) {
     .snap-x {
@@ -109,8 +106,8 @@ body {
     }
     
     .snap-start img {
-      max-width: 400px; /* Set max width to 400px when zoomed in */
-      height: 420px; /* Set height to 420px when zoomed in */
+      max-width: 400px; 
+      height: 420px; 
     }
   }
 
@@ -155,36 +152,36 @@ body {
 
   .swiper1-button-prev button,
   .swiper1-button-next button {
-    font-size: 15px; /* Adjust as needed */
+    font-size: 15px;
     border: none;
     background: none;
     padding: 0;
-    appearance: none; /* Remove default button styling */
+    appearance: none;
     color: white;
   }
 
   /* classic horizontal-scroll */
   .horizontal-scroll-container {
-    width: 100%; /* Set the width of the container */
-    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Ensure images stay in a single line */
+    width: 100%; 
+    max-width: 100%; 
+    overflow-x: auto;
+    white-space: nowrap; 
     margin-left: 24px;
   }
 
   .horizontal-scroll-container img {
-    display: inline-block; /* Display images in a line */
-    max-width: 100%; /* Ensure images don't exceed the container width */
+    display: inline-block; 
+    max-width: 100%;
     height: auto;
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    object-fit: cover;
     margin-right: 10px;
   }
 
   @media (max-width: 768px) {
     .horizontal-scroll-container img {
-      width: 340px; /* Set the width to 100% for smaller screens */
-      max-width: none; /* Remove the maximum width restriction */
-      margin-right: 0; /* Remove margin between images */
+      width: 340px; 
+      max-width: none; 
+      margin-right: 0; 
     }
   }
 
@@ -219,7 +216,7 @@ body {
 
   .swiper2-button-prev button,
   .swiper2-button-next button {
-  font-size: 15px; /* Adjust as needed */
+  font-size: 15px; 
   border: none;
   background: none;
   padding: 0;
@@ -289,7 +286,7 @@ body {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: black; /* Change text color to black */
+    color: black; 
   }
 
   .overlay-text button {
