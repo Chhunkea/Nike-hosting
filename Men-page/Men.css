@@ -2,11 +2,16 @@ body {
   overflow-x: hidden;
 }
 
+/* testing */
+/* * {
+  outline: 1px solid red;
+} */
+
+
 .nav-men {
     display: flex;
     align-items: center; 
-    padding: 26px 0px 0px;
-    margin: 0px 48px;
+    margin: 28px 48px;
   }
   
   .nav-men h1 {
@@ -30,6 +35,13 @@ body {
   .nav-menpic {
     top: 0;
     margin: 48px;
+  }
+
+  @media (max-width: 768px) {
+    .nav-menpic {
+      margin-top: 10px;
+     margin: 0;
+    }
   }
 
   .text-nav-men {
@@ -92,7 +104,44 @@ body {
       font-size: 18px; 
     }
   }
+
+  /* humburger */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease; 
+  }
   
+  .sidebar.active {
+    right: 0;
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+  }
+  
+  .close-btn {
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: 90%; 
+  }
+
+  /* Apply a blur filter to all elements except the sidebar */
+.blur-effect {
+  filter: blur(5px); /* Adjust the blur radius as needed */
+}
+
+/* Remove the blur filter from the sidebar */
+.sidebar {
+  filter: none;
+}
+
+
  /* hover on the texts */
  .hover-box {
   position: absolute;
@@ -158,11 +207,11 @@ body {
   }
   
   .horizontal-scroll-container {
-    width: 100%; 
-    max-width: 100%;
+    width: 100%;
     overflow-x: auto; 
     white-space: nowrap;
-    margin-left: 48px;
+    padding-left: 48px;
+    box-sizing: border-box; 
   }
   
   .horizontal-scroll-container img {
@@ -317,6 +366,9 @@ body {
   /* Image and text */
   .image-container {
     display:flex;
+    flex-wrap: nowrap; 
+    overflow-x: hidden; 
+    max-width: 100%;
   }
   
   .image-member {
@@ -329,7 +381,6 @@ body {
   .member-text {
     position: absolute;
     bottom: 20px;
-    left: 20px;
     color: black;
    }
   
@@ -420,7 +471,6 @@ body {
       display: flex;
       flex-direction: column;
       align-items:start;
-      font-size: 10px;
       margin-left: 50px;
       gap: 10px;
       margin-top: -50px;
@@ -441,9 +491,7 @@ body {
     gap: 50px;
     margin-top: -50px;
     top: 0;
-}
-
-  
+  }
 }
 
 /* Footer2 */
@@ -454,7 +502,6 @@ body {
   padding-right: 40px;
   margin-left: -6px;
   margin-right: -6px;
-  margin-bottom: 16px;
   font-size: 12px;
 }
 
@@ -605,7 +652,6 @@ body {
   .footer2-class h4 {
     display: flex;
     margin-left: -25px;
-    font-size: 0.05rem;
   }
 
   .footer2-bottom-right {
