@@ -2,6 +2,11 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  outline: 1px solid red;
+}
+
+
 .nav-women {
     display: flex;
     align-items: center; 
@@ -300,6 +305,9 @@ body {
   /* Image and text */
   .image-member-container {
     display:flex;
+    flex-wrap: nowrap; 
+    overflow-x: hidden; 
+    max-width: 100%;
   }
   
   .image-member {
@@ -427,9 +435,6 @@ body {
       padding-top: 40px;
       padding-left: 28px;
       padding-right: 40px;
-      margin-left: -6px;
-      margin-right: -6px;
-      margin-bottom: 16px;
       font-size: 12px;
     }
     
