@@ -74,7 +74,6 @@ body {
     padding-right: 48px;
     overflow-x: auto;
   }
-  
 
   .grid-item {
     padding-bottom: 30px;
@@ -131,16 +130,6 @@ body {
     margin-left: 90%; 
   }
 
-  /* Apply a blur filter to all elements except the sidebar */
-.blur-effect {
-  filter: blur(5px); /* Adjust the blur radius as needed */
-}
-
-/* Remove the blur filter from the sidebar */
-.sidebar {
-  filter: none;
-}
-
 
  /* hover on the texts */
  .hover-box {
@@ -161,6 +150,7 @@ body {
   gap: 80px;
   justify-content: center;
   display: flex;
+  margin-top: 30px;
 }
 
 
