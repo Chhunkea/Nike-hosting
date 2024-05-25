@@ -32,3 +32,27 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// humburger
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerIcon = document.querySelector(".hamburger-icon");
+    const sidebar = document.querySelector(".sidebar");
+    const closeBtn = document.querySelector(".close-btn");
+
+    // Add click event listener to hamburger icon
+    hamburgerIcon.addEventListener("click", function() {
+        sidebar.classList.toggle("active");
+    });
+
+    // Add click event listener to close button
+    closeBtn.addEventListener("click", function() {
+        sidebar.classList.remove("active");
+    });
+
+    // Hide the sidebar when clicking outside of it
+    document.addEventListener("click", function(event) {
+        if (!sidebar.contains(event.target) && !hamburgerIcon.contains(event.target)) {
+            sidebar.classList.remove("active");
+        }
+    });
+});
