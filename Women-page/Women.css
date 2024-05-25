@@ -2,9 +2,9 @@ body {
   overflow-x: hidden;
 }
 
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 
 .nav-women {
@@ -358,7 +358,7 @@ body {
   }
 
     /* Footer 1 */
-    .footer1-men {
+    .footer1-women {
         margin-top: 48px;
         margin-bottom: 56px;
         font-size: 12px;
@@ -369,7 +369,7 @@ body {
         margin-right: 179.500px; 
     }
     
-    .footer-men-margin {
+    .footer-women-margin {
         display: grid;
         grid-template-columns: repeat(4, 1fr); 
         gap: 20px; 
@@ -378,31 +378,31 @@ body {
         margin-right: 179.500px; 
     }
     
-    .footer-men-margin > div {
+    .footer-women-margin > div {
         text-align: left; 
         color: gray;
     }
     
-    .footer-men-margin h4 {
+    .footer-women-margin h4 {
         margin-bottom: 24px; 
         color: black;
     }
     
-    .footer-men-margin ul {
+    .footer-women-margin ul {
         list-style: none;
         padding: 0; 
     }
     
-    .footer-men-margin ul li {
+    .footer-women-margin ul li {
         margin-bottom: 12px; 
     }
 
-    .footer-men-margin ul li a:hover {
+    .footer-women-margin ul li a:hover {
       color: black; 
     }
     
     @media (max-width: 768px) {
-      .footer-men-margin {
+      .footer-women-margin {
           display: flex;
           flex-direction: column;
           align-items:start;
@@ -413,13 +413,13 @@ body {
           top: 0;
       }
       
-      .footer-men-margin ul li {
+      .footer-women-margin ul li {
           display: none; 
       }
     }
     
     @media (min-width:1280px) {
-      .footer-men-margin {
+      .footer-women-margin {
         display: flex;
         justify-content: center;
         font-size: 12px;

@@ -365,7 +365,7 @@ body {
 
 
   /* Footer 1 */
-  .footer1-men {
+  .footer1-kid {
     margin-top: 48px;
     margin-bottom: 56px;
     font-size: 12px;
@@ -376,7 +376,7 @@ body {
     margin-right: 179.500px; 
 }
 
-.footer-men-margin {
+.footer-kid-margin {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
@@ -385,26 +385,26 @@ body {
     margin-right: 179.500px; 
 }
 
-.footer-men-margin > div {
+.footer-kid-margin > div {
     text-align: left; 
     color: gray;
 }
 
-.footer-men-margin h4 {
+.footer-kid-margin h4 {
     margin-bottom: 24px; 
     color: black;
 }
 
-.footer-men-margin ul {
+.footer-kid-margin ul {
     list-style: none;
     padding: 0; 
 }
 
-.footer-men-margin ul li {
+.footer-kid-margin ul li {
     margin-bottom: 12px; 
 }
 
-.footer-men-margin ul li a:hover {
+.footer-kid-margin ul li a:hover {
   color: black; 
 }
 
@@ -412,7 +412,7 @@ body {
 
 
 @media (max-width: 768px) {
-  .footer-men-margin {
+  .footer-kid-margin {
       display: flex;
       flex-direction: column;
       align-items:start;
@@ -422,14 +422,14 @@ body {
       top: 0;
   }
   
-  .footer-men-margin ul li {
+  .footer-kid-margin ul li {
       display: none;
  
   }
 }
 
 @media (min-width:1280px) {
-  .footer-men-margin {
+  .footer-kid-margin {
     display: flex;
     justify-content: center;
     font-size: 12px;
@@ -568,7 +568,7 @@ body {
 
 /* Footer2 responsive */
 @media (max-width: 768px) {
-  /* Hide li elements */
+  /* Hide li elekidts */
   .footer2-class li {
     display: none;
   }
@@ -597,7 +597,7 @@ body {
       margin-bottom: 10px;
     }
 
-    /* Display h4 elements */
+    /* Display h4 elekidts */
     .footer2-class h4 {
       display: block;
     }
