@@ -2,13 +2,10 @@
   .new-release {
   display: flex;
   justify-content: space-between;
-  margin-top: px;
-  padding: 35px;
   }
 
   /* Sidebar */
   body {
-    font-family: "Lato", sans-serif;
     overflow-x: hidden;
   }
 
@@ -160,58 +157,57 @@
     
       .circle {
         margin-left: 20px;
-        width: 10px;
-        height: 20px;
-        border-radius: 14px; 
+        width: 28px;
+        height: 28px;
+        border: 1px solid #ccc;
+        border-radius: 100%; 
         display: flex;
         flex-direction: column;
       }
       
       .circle p {
-        margin-top: 20px;
+        margin-top: 30px;
         font-size: 14px;
         margin-left: -20px;
       }
     
       .purple-color{
-          background-color: purple;
+          background-color: #8D429F;
       }
-
       .black-color {
-        background-color: black;
+        background-color: #000000;
       }
       .red-color {
-        background-color: red;
+        background-color: #E7352B;
       }
       .orange-color {
-        background-color: orange;
+        background-color: #F36B26;
       }
       .blue-color {
-        background-color: blue;
+        background-color: #1790C8;
       }
       .white-color {
-        background-color: #E5E5E5;
+        background-color: #fff;
       }
       .brown-color {
-        background-color: brown;
+        background-color: #825D41;
       }
       .green-color {
-        background-color: green;
+        background-color: #7BBA3C;
       }
       .yellow-color {
-        background-color: yellow;
+        background-color: #FED533;
       }
       .grey-color {
-        background-color: gray;
+        background-color: #808080;
       }
       .pink-color {
-        background-color: pink;
+        background-color: #F0728F;
       }
       .multi-color {
         background: radial-gradient(#f2f2f2 20%, transparent 20%), radial-gradient(#1a1919 20%, transparent 20%), #2b2323;
       }
       
-    
       /* image */
       .image-container {
         margin-top: 0%;
@@ -227,7 +223,7 @@
     }
     
     .image-container a {
-      color: rgb(156, 70, 55);
+      color: #9E3500;
       font-size: 20px;
       text-decoration: none;
       margin-bottom: 5px;
