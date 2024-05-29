@@ -1,0 +1,571 @@
+body {
+  overflow-x: hidden;
+}
+
+ /* logo nike */
+  .logo-container {
+    position: absolute;
+    left: 20px; 
+    top: 50%;
+    transform: translateY(-50%); 
+  }
+
+  /* Brooks-big-text */
+  @media (max-width: 768px) {
+    .big-text-brook {
+      font-size: 4rem; 
+    }
+    .big-text-brook-top {
+      font-size: 4rem;
+      margin-top: -30px;
+    }
+  }
+
+  /* humburger */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease; 
+  }
+  
+  .sidebar.active {
+    right: 0;
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+  }
+  
+  .close-btn {
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: 90%; 
+  }
+
+/* hover on the texts */
+.hover-box {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 25px);
+  background-color: rgb(255, 255, 255);
+  width:100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+  z-index: 1; 
+}
+
+.hover-down-texts {
+  margin-bottom: 20px;
+  gap: 80px;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+
+.flex-item-hover {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item-hover > a {
+  margin-bottom: 10px;
+}
+
+.flex-item-hover-gray {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.flex-item-hover-gray:hover {
+  color: black;
+}
+
+/* end-hover-texts */
+
+  /* Scrolling */
+  .scroll-container {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .snap-x {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .snap-start {
+    flex: 0 0 auto;
+    padding-right: 16px;
+  }
+
+  .snap-start img {
+    max-width: 100%;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .snap-x {
+      scroll-padding: 0 50%; 
+    }
+    
+    .snap-start img {
+      max-width: 400px; 
+      height: 420px; 
+    }
+  }
+
+  /* bag and heart icon*/
+  .relative {
+    display: flex;
+    align-items: center;
+  }
+
+  .pr-4 {
+    margin-right: 0; 
+  }
+
+  /* button for trending */
+  .trending-section {
+    position: relative; 
+  }
+
+  .swiper1-button-prev,
+  .swiper1-button-next {
+    position: absolute;
+    top: 1px;
+    right: 4px;
+    width: 40px;
+    background-color: #D9D9D9;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+
+  .swiper1-button-next {
+    right: 50px;
+  }
+
+
+  .swiper1-button-prev button,
+  .swiper1-button-next button {
+    font-size: 15px;
+    border: none;
+    background: none;
+    padding: 0;
+    appearance: none;
+    color: white;
+  }
+
+  /* classic horizontal-scroll */
+  .horizontal-scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 24px;
+  }
+
+  .horizontal-scroll-container img {
+    display: inline-block; 
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .horizontal-scroll-container img {
+      width: 340px; 
+      max-width: none; 
+      margin-right: 0; 
+    }
+  }
+
+
+  /* button for shop by sport */
+  .shop-section {
+  position: relative; 
+  }
+
+  .swiper2-button-prev,
+  .swiper2-button-next {
+  position: absolute;
+  top: 1px;
+  right: 4px;
+  width: 40px;
+  height: 40px;
+  background-color: #D9D9D9;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  }
+
+
+  .swiper2-button-next {
+  right: 50px;
+  }
+
+  .swiper2-button-prev button,
+  .swiper2-button-next button {
+  font-size: 15px; 
+  border: none;
+  background: none;
+  padding: 0;
+  appearance: none; /* Remove default button styling */
+  color: white;
+  }
+
+
+  /* bag and heart icon*/
+  .pr-4 {
+  margin-right: 0; 
+  }
+
+  /* button for trending */
+  .popular-section {
+  position: relative; 
+  }
+
+  .swiper3-button-prev,
+  .swiper3-button-next {
+  position: absolute;
+  top: 1px;
+  right: 4px;
+  width: 40px;
+  height: 40px;
+  background-color: #D9D9D9;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  }
+
+
+  .swiper3-button-next {
+  right: 50px;
+  }
+
+  .swiper3-button-prev button,
+  .swiper3-button-next button {
+  font-size: 15px; /* Adjust as needed */
+  border: none;
+  background: none;
+  padding: 0;
+  appearance: none; /* Remove default button styling */
+  color: white;
+  }
+
+  /* Nike membership and all image container*/
+  .image-container {
+    padding-left: 24px;
+    padding-right: 24px;
+    display:flex;
+  }
+
+  .image-overlay {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    padding: 5px;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: black; 
+  }
+
+  .overlay-text button {
+    background-color: white; /* Change button background color */
+    color: black; /*Change button text color  */
+    border-radius: 20px; /*Add border-radius to button */ 
+    padding: 8px 16px; /*Add padding to button  */
+  } 
+
+  .image-overlay img {
+    width: 100%;
+    height: auto;
+  }   
+
+  @media (max-width: 768px) {
+    .image-container {
+      flex-direction: column; /* Change flex direction to column */
+    }
+
+    .image-overlay,
+    .overlay-text {
+      width: 100%; /* Set width to 100% for smaller screens */
+      left: 0; /* Reset left position */
+    }
+    .overlay-text {
+      margin-left: 15px; /* Add margin-left for text on smaller screens */
+    }
+  }
+
+
+  /* Footer 1 */
+  .footer1 {
+    margin-top: 84px;
+    margin-bottom: 56px;
+    font-size: 16px;
+  }
+
+
+  .footer-margin > div {
+    text-align: left; 
+    color: gray;
+  }
+
+  .footer-margin h4 {
+    margin-bottom: 24px; 
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+
+  .footer-margin ul {                              
+    list-style: none;
+    padding: 0; 
+  }
+
+  .footer-margin ul li {
+    margin-bottom: 12px; 
+  }
+
+  .footer-margin ul li a:hover {
+    color: black; /* Change color on hover */
+  }
+
+  @media (max-width: 768px) {
+  .footer-margin {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    margin-left: 50px;
+    gap: 10px;
+    margin-top: -50px;
+    top: 0;
+  }
+
+  .footer-margin ul li {
+      display: none; /* Hide li elements */
+  }
+  }
+
+  @media (min-width:800px) {
+  .footer-margin {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    gap: 100px;
+    margin-top: -50px;
+    top: 0;
+  }
+  }
+
+  /* Footer2 */
+  .footer2 {
+  background-color: black;
+  padding-top: 40px;
+  padding-left: 70px;
+  padding-right: 40px;
+  font-size: 12px;
+  }
+
+  .footer2-container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  }
+
+  .footer2-class h4 {
+  margin-right: 30px;
+  font-size: 14px;
+  }
+
+  .footer2-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+
+  .footer2-li {
+  padding: 6px;
+  color: gray;
+  margin-bottom: 5px;
+  }
+
+  /* svg icons */
+  .svg-icon-footer2 {
+  display: flex;
+  margin-left: 20px;
+  }
+
+
+  .svg-icon-footer2 ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    color: gray;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* United state */
+  .privacy {
+  margin-top: 48px;
+  }
+
+  .down-footer2 {
+  color: white;
+  display: flex;
+  padding-left: 3vw;
+  padding-right: 6px;
+  padding-top: 12px;
+  font-size: 16px;
+  }
+
+  .nike-right-reserved {
+  font-size: 12px;
+  color: gray;
+  }
+
+  /* footer2-right */
+  .footer2-bottom-right {
+  margin-left: auto;
+  color: gray;
+  gap: 20px;
+  }
+
+  .footer2-bottom-right ul {
+  display: flex;
+  margin: -50px;
+  margin-right: -2px;
+  gap: 20px;
+  }
+
+  .footer2-bottom-right li {
+  justify-content: space-around;
+  font-size: 12px;
+  margin-right: 10px;
+  }
+
+  .footer2-bottom-right ul li {
+  margin-bottom: 10px;
+  }
+
+  /* footer-down the guides */
+  .footer-links-column {
+  justify-content: flex-end;
+  display: flex;
+  color: gray;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  gap: 20px;
+  margin-top: -30px;
+  }
+
+  .footer-links-column li {
+  margin-left: 0;
+  }
+
+  .footer2 > .container > .footer2-men > .footer2-container > .footer2-class > .footer2-ul > .footer2-li:hover  {
+    color: white;
+    cursor: pointer;
+  }
+
+  .svg-icon-footer2 :hover {
+    fill: white;
+    cursor: pointer;
+  }
+
+  .country-pin-label {
+    font-size: 12px;
+  }
+
+
+  /* Footer2 responsive */
+  @media (max-width: 768px) {
+  /* Hide li elements */
+  .footer2-class li {
+    display: none;
+  }
+  /* svg */
+  .footer2 > .container > .footer2-men > .footer2-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer2 > .container > .footer2-men > .footer2-container > .svg-icon-footer2 > ul > li {
+    display: flex;
+    position: relative;
+    left: -25%;
+    top: 20px;
+  }
+  
+  /* location */
+  .footer2 > .container > .footer2-men > .footer2-container > .svg-icon-footer2 > .privacy > .down-footer2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* united-state */
+  .footer2 > .container > .footer2-men >  .privacy > .down-footer2  {
+    display: flex;
+    flex-direction: column;
+    margin-left: -6vw;
+    margin-bottom: 2vh;
+  }
+
+  /* Display h4 elements */
+  .footer2-class h4 {
+    display: flex;
+    margin-left: -25px;
+  }
+
+  .footer2-bottom-right {
+    display: none;
+  }
+
+ /* logo-location */
+  .footer2 > .container > .footer2-men >  .privacy > .down-footer2 > .svg-location {
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  .footer-links-column {
+    display: none;
+    }
+  }
+
+  /* iphone12-pro */
+  @media (max-width: 390px) and (max-height: 844px) {
+    .svg-icon-footer2 {
+      display: none;
+    }
+    .big-nav-container {
+      display: none;
+    }
+  }

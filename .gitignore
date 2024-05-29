@@ -1,4 +1,8 @@
 #logs
 *logs
 
+.DS_Store#logs
+
+*logs
+
 .DS_Store
