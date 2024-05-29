@@ -33,22 +33,46 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// humburger
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerIcon = document.querySelector(".hamburger-icon");
+    const sidebar = document.querySelector(".sidebar");
+    const closeBtn = document.querySelector(".close-btn");
 
-
-
-// blurry
-
-document.addEventListener('DOMContentLoaded', function() {
-
-    const contentToBlur = document.querySelector('.blurry-all');
-    const hoverTrigger = document.querySelector('.hover-trigger');
-
-    hoverTrigger.addEventListener('mouseenter', function() {
-        contentToBlur.classList.add('blurry');
+    // Add click event listener to hamburger icon
+    hamburgerIcon.addEventListener("click", function() {
+        sidebar.classList.toggle("active");
     });
 
-    hoverTrigger.addEventListener('mouseleave', function() {
-        contentToBlur.classList.remove('blurry');
+    // Add click event listener to close button
+    closeBtn.addEventListener("click", function() {
+        sidebar.classList.remove("active");
+    });
+
+    // Hide the sidebar when clicking outside of it
+    document.addEventListener("click", function(event) {
+        if (!sidebar.contains(event.target) && !hamburgerIcon.contains(event.target)) {
+            sidebar.classList.remove("active");
+        }
     });
 });
 
+
+// Accordion
+document.addEventListener('DOMContentLoaded', function () {
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+        header.addEventListener('click', function () {
+            // Toggle active class
+            this.classList.toggle('active');
+
+            // Toggle the accordion content
+            const content = this.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+    });
+});

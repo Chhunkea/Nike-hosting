@@ -5,13 +5,13 @@ body {
 
 .nav-kid {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center; 
     padding: 26px 0px 34px;
     margin: 0px 48px;
   }
   
   .nav-kid h1 {
-    margin-right: auto; /* Push the h1 element to the left */
+    margin-right: auto; 
   }
 
 
@@ -28,9 +28,35 @@ body {
     margin-right: 20px;
   }
 
-  .nav-kidpic {
+  /*  humburger */ 
+  .sidebar {
+    position: fixed;
     top: 0;
-    margin: 48px;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease; 
+  }
+  
+  .sidebar.active {
+    right: 0;
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+  }
+  
+  .close-btn {
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: 90%; 
+  }
+
+  .nav-kidpic {
+    margin-left: 48px;
+    margin-right: 48px;
   }
 
 
@@ -61,9 +87,8 @@ body {
   /* hover on the texts */
 .hover-box {
   position: absolute;
-  top: 10%; 
   left: 50%;
-  transform: translate(-50%, 10px);
+  transform: translate(-50%, 20px);
   background-color: rgb(255, 255, 255);
   width:100%;
   visibility: hidden;
@@ -77,6 +102,7 @@ body {
   gap: 80px;
   justify-content: center;
   display: flex;
+  margin-top: 20px;
 }
 
 
@@ -97,16 +123,6 @@ body {
 .flex-item-hover-gray:hover {
   color: black;
 }
-
-.blurry-all {
-  filter: blur(10%); /* Change the blur value here */
-  transition: filter 0.5s ease;
-  z-index: 1;
-}
-
-.blurry {
-  filter: blur(105%);
-}
 /* end-hover-texts */
 
   .flexbox-container {
@@ -115,7 +131,6 @@ body {
   }
 
   .left-top, .left-bottom, .right-top, .right-bottom {
-
      flex:  calc(50% - 5px); /* Each item takes half of the container width minus gap */
   }
 
@@ -125,20 +140,19 @@ body {
   }
 
 
-
 /* text-button */
 .overlay-text {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: black; /* Change text color to black */
+    color: black;
    }
   
   .overlay-text button {
-    background-color: rgb(0, 0, 0); /* Change button background color */
-    color: rgb(255, 255, 255); /*Change button text color  */
-    border-radius: 20px; /*Add border-radius to button */ 
-    padding: 8px 16px; /*Add padding to button  */
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); 
+    border-radius: 20px;
+    padding: 8px 16px; 
   } 
 
   .image-overlay {
@@ -148,24 +162,24 @@ body {
   /* kid responsive-columns */
   @media (max-width: 768px) {
     .four-kid-image {
-        margin-left: 20px; /* Adjust margins for smaller screens */
+        margin-left: 20px; 
         margin-right: 20px;
         margin-top: 50px;
     }
 
     .flexbox-container {
-        flex-direction: column; /* Ensure items stack in a column */
+        flex-direction: column; 
     }
 
     .left-top, .left-bottom, .right-top, .right-bottom {
-        margin-top: 20px; /* Increase top margin for spacing */
+        margin-top: 20px; 
     }
 
     .overlay-text {
-        position: relative; /* Reset position to default */
+        position: relative; 
         bottom: auto;
         left: auto;
-        margin-top: 15px; /* Adjust top margin for spacing */
+        margin-top: 15px; 
     }
 }
 
@@ -184,25 +198,25 @@ body {
 
 /* horizontal-image-with-text-below */
 .horizontal-scroll-container-text {
-  display: flex; /* Display flex for horizontal layout */
-  overflow-x: auto; /* Enable horizontal scrolling */
+  display: flex; 
+  overflow-x: auto; 
 }
 
 .image-with-text {
-  padding-bottom: 30px; /* Add bottom padding to the image */
-  margin-right: 10px; /* Adjust margin between each container */
+  padding-bottom: 30px; 
+  margin-right: 10px; 
 }
 
 .image-with-text img {
-  max-width: 558px; /* Set maximum width to maintain aspect ratio */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Add space between image and text */
+  max-width: 558px;
+  height: auto; 
+  margin-bottom: 10px; 
 }
 
 .image-with-text h4,
 .image-with-text h5,
 .image-with-text h3 {
-  text-align: left; /* Align text to the left */
+  text-align: left; 
 }
 
 .image-with-text h5 {
@@ -212,7 +226,7 @@ body {
 @media (max-width: 768px) {
   .horizontal-scroll-container-text {
     overflow-x: auto;
-    padding-left: 0; /* Remove left padding on smaller screens */
+    padding-left: 0;
   }
 
   .image-with-text {
@@ -221,8 +235,8 @@ body {
   }
 
   .image-with-text img {
-    width: 340px; /* Set width to 340px on smaller screens */
-    max-width: none; /* Remove maximum width restriction */
+    width: 340px;
+    max-width: none; 
   }
 
 }
@@ -246,14 +260,14 @@ body {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  color: black; /* Change text color to black */
+  color: black;
  }
 
 .overlay-text-trending button {
-  background-color: white; /* Change button background color */
-  color: black; /*Change button text color  */
-  border-radius: 20px; /*Add border-radius to button */ 
-  padding: 8px 16px; /*Add padding to button  */
+  background-color: white; 
+  color: black; 
+  border-radius: 20px; 
+  padding: 8px 16px; 
 } 
 
 .image-trending img {
@@ -263,21 +277,20 @@ body {
 
 @media (max-width: 768px) {
   .image-two-people {
-    flex-direction: column; /* Change flex direction to column */
+    flex-direction: column; 
   }
 
   .image-trending,
   .overlay-text-trending {
-    width: 100%; /* Set width to 100% for smaller screens */
-    left: 0; /* Reset left position */
+    width: 100%; 
+    left: 0; 
   }
   .overlay-text-trending {
-    margin-left: 15px; /* Add margin-left for text on smaller screens */
+    margin-left: 15px; 
   }
 }
 
 /* Three-kids-more-to-explore */
-/* three kid image */
 .explore-more {
   margin: 12px 0 24px; /* Bottom, top and sides */
   padding-right: 24px;
@@ -307,9 +320,9 @@ body {
 
 /* Style for the images inside each picture */
 .kid-picture img {
-  width: 100%; /* Ensure images fill the container */
-  height: 100%; /* Ensure images fill the container */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
 }
 
 .anchor-underline {
@@ -353,42 +366,42 @@ body {
 /* carousel */
 .horizontal-scroll-container {
   padding-left: 48px;
-  width: 100%; /* Set the width of the container */
-  max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Ensure images stay in a single line */
+  width: 100%; 
+  max-width: 100%; 
+  overflow-x: auto; 
+  white-space: nowrap; 
 }
 
 .horizontal-scroll-container img {
-  display: inline-block; /* Display images in a line */
-  max-width: 100%; /* Ensure images don't exceed the container width */
+  display: inline-block; 
+  max-width: 100%; 
   height: auto;
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  object-fit: cover; 
   margin-right: 10px;
 }
 
 @media (max-width: 768px) {
   .horizontal-scroll-container img {
-    width: 340px; /* Set the width to 100% for smaller screens */
-    max-width: none; /* Remove the maximum width restriction */
-    margin-right: 0; /* Remove margin between images */
+    width: 340px; 
+    max-width: none; 
+    margin-right: 0;
   }
 }
 
 
   /* Footer 1 */
-  .footer1-men {
+  .footer1-kid {
     margin-top: 48px;
     margin-bottom: 56px;
     font-size: 12px;
 }
 
 .outer-container {
-    margin-left: 179.500px; /* Apply left margin */
-    margin-right: 179.500px; /* Apply right margin */
+    margin-left: 179.500px; 
+    margin-right: 179.500px; 
 }
 
-.footer-men-margin {
+.footer-kid-margin {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
@@ -397,63 +410,60 @@ body {
     margin-right: 179.500px; 
 }
 
-.footer-men-margin > div {
+.footer-kid-margin > div {
     text-align: left; 
     color: gray;
 }
 
-.footer-men-margin h4 {
+.footer-kid-margin h4 {
     margin-bottom: 24px; 
     color: black;
+    font-size: 24px;
 }
 
-.footer-men-margin ul {
+.footer-kid-margin ul {
     list-style: none;
     padding: 0; 
+    font-size: 16px;
 }
 
-.footer-men-margin ul li {
+.footer-kid-margin ul li {
     margin-bottom: 12px; 
 }
 
-.footer-men-margin ul li a:hover {
-  color: black; /* Change color on hover */
+.footer-kid-margin ul li a:hover {
+  color: black; 
 }
 
 
-
-
 @media (max-width: 768px) {
-  .footer-men-margin {
+  .footer-kid-margin {
       display: flex;
       flex-direction: column;
       align-items:start;
-      font-size: 10px;
       margin-left: 50px;
       gap: 10px;
       margin-top: 50px;
       top: 0;
   }
   
-  .footer-men-margin ul li {
-      display: none; /* Hide li elements */
+  .footer-kid-margin ul li {
+      display: none;
  
   }
 }
 
 @media (min-width:1280px) {
-  .footer-men-margin {
+  .footer-kid-margin {
     display: flex;
     justify-content: center;
     font-size: 12px;
     margin-left: 50px;
     margin-right: 20px;
-    gap: 50px;
+    gap: 110px;
     margin-top: 50px;
     top: 0;
 }
-
-
   
 }
 
@@ -461,11 +471,10 @@ body {
 .footer2-kid {
   background-color: black;
   padding-top: 40px;
-  padding-left: 20px;
+  padding-left: 28px;
   padding-right: 40px;
   margin-left: -6px;
   margin-right: -6px;
-  margin-bottom: 16px;
   font-size: 12px;
 }
 
@@ -473,6 +482,10 @@ body {
   display: flex;
   justify-content: space-around;
   font-size: 12px;
+}
+
+.footer2-container h4 {
+  font-size: 14px;
 }
 
 .footer2-class {
@@ -516,7 +529,7 @@ body {
 .down-footer2 {
   color: white;
   display: flex;
-  padding-left: 8px;
+  padding-left: 50px;
   padding-right: 6px;
   padding-top: 12px;
   font-size: 16px;
@@ -555,7 +568,7 @@ body {
   display: flex;
   color: gray;
   list-style: none;
-  padding: 5px;
+  padding: 10px;
   margin: 0;
   gap: 20px;
   margin-top: -30px;
@@ -581,7 +594,7 @@ body {
 
 /* Footer2 responsive */
 @media (max-width: 768px) {
-  /* Hide li elements */
+  /* Hide li elekidts */
   .footer2-class li {
     display: none;
   }
@@ -600,7 +613,7 @@ body {
   .footer2-kid > .container > .footer2-kid >  .privacy > .down-footer2  {
     display: flex;
     flex-direction: column;
-    margin-left: -2vw;
+    margin-left: -10vw;
     margin-bottom: 2vh;
     }
 
@@ -610,7 +623,7 @@ body {
       margin-bottom: 10px;
     }
 
-    /* Display h4 elements */
+    /* Display h4 elekidts */
     .footer2-class h4 {
       display: block;
     }
