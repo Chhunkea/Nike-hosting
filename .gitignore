@@ -1,8 +1,36 @@
 #logs
 *logs
 
-.DS_Store#logs
-
-*logs
-
 .DS_Store
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore object files
+*.o
+*.obj
+
+# Ignore dependency folders
+node_modules/
+vendor/
+
+# Ignore temporary files
+*.tmp
+
+# Ignore log files
+*.log
+
+# Ignore editor/IDE specific files and directories
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore environment-specific files
+.env
+
+# Ignore package-lock.json for npm projects
+package-lock.json
