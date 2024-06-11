@@ -9,6 +9,7 @@
     <script src="../components/component-navbar.js" defer></script>
     <script src="../components/component-footer.js" defer></script>
     <script src="../components/feature.js" defer></script>
+    <script src="../components/shoesCard.js" defer></script>
     <link rel="icon" type="image/x-icon" href="https://www.nike.com/favicon.ico?v=1">
     <script src="../src/script/Women.js" defer></script>
 </head>
@@ -34,7 +35,7 @@
         </div>
     
         <!-- Image: Women big text -->
-        <div class="nav-womenpic flex flex-wrap w-full p-[48px] m-0">
+        <div class="nav-womenpic flex flex-wrap w-full pl-[48px] pr-[48px] pt-[48px] m-0">
             <div class="image-women1 w-full flex justify-center">
                 <img class="w-full h-auto block" src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_1111,c_limit/21439200-e1e5-423a-8753-6aa217ef2241/women-s-shoes-clothing-accessories.png" alt="Image">
             </div>
@@ -149,19 +150,17 @@
 
         <!-- Popular shoes -->
         <div>
-            <div>
-                <h2 class="popular-shoes text-2xl mt-[84px]">Popular Right Now</h2>
-            </div>
-        
-            <div class="horizontal-scroll-container">
-                <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/fc218d44-5e32-4a25-a8b1-3dbdeb666751/free-metcon-5-womens-workout-shoes-h4Zl5h.png" alt="Image shoes-1">
-                <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/8cd92eef-edab-46b2-ae81-0e4af8377602/killshot-2-womens-shoes-3z3Nnb.png" alt="Image shoes-2">
-                <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/694fc89f-7bb3-4a2e-bcaa-56bbab5ed1bc/v2k-run-shoes-ZKMJLX.png" alt="Image shoes-3">
-                <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/c279f13e-cf3e-4738-8aa3-5b6576b5f51a/air-max-90-lv8-womens-shoes-4splTJ.png" alt="Image shoes-4">
-                <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/84965911-0225-4391-b6a1-9e7a6ca40fd8/air-vapormax-plus-womens-shoes-xbt7zf.png" alt="Image shoes-5">
-                <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/c9facc81-055e-4d59-8659-9107a04ebfde/invincible-3-womens-road-running-shoes-tfL5Tr.png" alt="Shoes 6">
-                <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/bfaf9d84-28ef-4709-8f5c-6bbd1ffd70d4/gamma-force-womens-shoes-4TR9Xf.png" alt="Shoes 7">
-                <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/a765d13f-853a-4f81-932b-c7cf3c7386e3/pegasus-40-womens-road-running-shoes-6p7kp1.png" alt="Shoes 8">
+            <div class="popular-shoes">
+                <h2 class="popular-text text-2xl">Popular Right Now</h2>
+                <div class="horizontal-scroll-container-text">
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/fc218d44-5e32-4a25-a8b1-3dbdeb666751/free-metcon-5-womens-workout-shoes-h4Zl5h.png" shoes-title="Ja 1 'Day'" shoes-gender="Baskeball Shoes" shoes-price="120"></shoes-card>
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/8cd92eef-edab-46b2-ae81-0e4af8377602/killshot-2-womens-shoes-3z3Nnb.png" shoes-title="Nike Dunk Low Retro" shoes-gender="Men's Shoes" shoes-price="115"></shoes-card>
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/694fc89f-7bb3-4a2e-bcaa-56bbab5ed1bc/v2k-run-shoes-ZKMJLX.png" shoes-title="Air Jordan 5 Retro SE" shoes-gender="Men's Shoes" shoes-price="210"></shoes-card>
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/c279f13e-cf3e-4738-8aa3-5b6576b5f51a/air-max-90-lv8-womens-shoes-4splTJ.png" shoes-title="Nike Vaporfly 3" shoes-gender="Men's Road Racing Shoes" shoes-price="260"></shoes-card>
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/84965911-0225-4391-b6a1-9e7a6ca40fd8/air-vapormax-plus-womens-shoes-xbt7zf.png" shoes-title="Nike Air Max Plus" shoes-gender="Men's Shoes" shoes-price="180"></shoes-card>
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/bfaf9d84-28ef-4709-8f5c-6bbd1ffd70d4/gamma-force-womens-shoes-4TR9Xf.png" shoes-title="Nike Zoom Vomero 5" shoes-gender="Women's Shoes" shoes-price="160"></shoes-card>
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_0.9/h_444,c_limit/a765d13f-853a-4f81-932b-c7cf3c7386e3/pegasus-40-womens-road-running-shoes-6p7kp1.png" shoes-title="Nike Air Force 1 '07" shoes-gender="Men's Shoes" shoes-price="115"></shoes-card>     
+                </div>
             </div>
         </div>
     

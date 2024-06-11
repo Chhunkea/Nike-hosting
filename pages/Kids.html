@@ -9,6 +9,7 @@
     <script src="../components/component-navbar.js" defer></script>
     <script src="../components/component-footer.js" defer></script>
     <script src="../components/feature.js" defer></script>
+    <script src="../components/shoesCard.js" defer></script>
     <link rel="icon" type="image/x-icon" href="https://www.nike.com/favicon.ico?v=1">
     <script src="../src/script/Kids.js" defer></script>
 </head>
@@ -114,75 +115,16 @@
             <div class="popular-shoes">
                 <h2 class="popular-text text-2xl">Popular Right Now</h2>
                 <div class="horizontal-scroll-container-text">
-                    <div class="image-with-text">
-                        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/e82a1901-e45f-46f7-b065-b019b0351837/air-jordan-4-retro-big-kids-shoes-VqdnWF.png" alt="Image shoes-1">
-                        <h4>Air Jordan 4 Retro</h4>
-                        <h5>Big Kid's Shoes</h5>
-                        <h3>$160</h3>
-                    </div>  
-                    
-                    <div class="image-with-text">
-                        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/9e301670-6601-4f99-8deb-73c6956099cf/jordan-4-retro-little-kids-shoes-kDKnwq.png" alt="Image shoes-2">
-                        <h4>Jordan 4 Retro</h4>
-                        <h5>Little Kid's Shoes</h5>
-                        <h3>$100</h3>
-                    </div>  
-    
-                    <div class="image-with-text">
-                        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/11945f86-56c7-4c61-ae7e-7582cb27342c/jordan-4-retro-baby-toddler-shoes-8ndFBg.png" alt="Image shoes-3">
-                        <h4>Jordan 4 Retro</h4>
-                        <h5>Baby/Toddler Shoes</h5>
-                        <h3>$85</h3>
-                    </div>  
-    
-                    <div class="image-with-text">
-                        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/45f4f8ff-3e74-4c24-85f8-12a01f49b021/air-max-dn-big-kids-shoes-SjtGM9.png" alt="Image shoes-4">
-                        <h4>Nike Air Max Dn</h4>
-                        <h5>Big Kid's Shoes</h5>
-                        <h3>$130</h3>
-                    </div>  
-    
-                    <div class="image-with-text">
-                        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/911ceeb7-0ba0-4395-b1a8-74dce8c6e1c2/dunk-low-baby-toddler-shoes-JvlMBn.png" alt="Image shoes-5">
-                        <h4>Nike Dunk Low</h4>
-                        <h5>Baby/Toddler Shoes</h5>
-                        <h3>$55</h3>
-                    </div>  
-    
-                    <div class="image-with-text">
-                        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/cc5e6eb6-b5a9-4402-b015-fa0519b4f7c8/dunk-low-big-kids-shoes-PKW4kS.png" alt="Shoes 6">
-                        <h4>Nike Dunk Low</h4>
-                        <h5>Big Kids Shoes</h5>
-                        <h3>$100</h3>
-                    </div>  
-    
-                    <div class="image-with-text">
-                        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/bb00ee1b-418e-44a1-9c05-bfbd0f67af8c/air-max-270-big-kids-shoes-8f50fT.png" alt="Shoes 7">
-                        <h4>Nike Air Max 270</h4>
-                        <h5>Big Kid's Shoes</h5>
-                        <h3>$130</h3>
-                    </div>  
-                    
-                    <div class="image-with-text">
-                        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/eee87dc3-012c-4a07-a2db-fb272b98233c/air-max-270-little-kids-shoes-81W8Fc.png" alt="Shoes 8">
-                        <h4>Nike Air Max 270</h4>
-                        <h5>Little Kid's Shoes</h5>
-                        <h3>$110</h3>
-                    </div>  
-    
-                    <div class="image-with-text">
-                        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/b1778add-1da0-4891-b830-f5105b15ea56/air-jordan-1-high-og-big-kids-shoes-kwqPnW.png" alt="Shoes 9">
-                        <h4>Air Jordan 1 High OG</h4>
-                        <h5>Big Kid's Shoes</h5>
-                        <h3>$140</h3>
-                    </div>  
-    
-                    <div class="image-with-text">
-                        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/fecba264-b8d4-41b3-bf91-c7235b673201/jordan-1-retro-high-og-little-kids-shoes-6P4b0q.png" alt="Shoes 10">
-                        <h4>Jordan 1 Retro High OG</h4>
-                        <h5>Little Kid's Shoes</h5>
-                        <h3>$85</h3>
-                    </div>  
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/e82a1901-e45f-46f7-b065-b019b0351837/air-jordan-4-retro-big-kids-shoes-VqdnWF.png" shoes-title="Air Jordan 4 Retro" shoes-gender="Big Kid's Shoes" shoes-price="160"></shoes-card>
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/9e301670-6601-4f99-8deb-73c6956099cf/jordan-4-retro-little-kids-shoes-kDKnwq.png" shoes-title="Jordan 4 Retro" shoes-gender="Little Kid's Shoes" shoes-price="100"></shoes-card>
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/11945f86-56c7-4c61-ae7e-7582cb27342c/jordan-4-retro-baby-toddler-shoes-8ndFBg.png" shoes-title="Jordan 4 Retro" shoes-gender="Baby/Toddler Shoes" shoes-price="85"></shoes-card>
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/45f4f8ff-3e74-4c24-85f8-12a01f49b021/air-max-dn-big-kids-shoes-SjtGM9.png" shoes-title="Nike Air Max Dn" shoes-gender="Big Kid's Shoes" shoes-price="130"></shoes-card>
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/911ceeb7-0ba0-4395-b1a8-74dce8c6e1c2/dunk-low-baby-toddler-shoes-JvlMBn.png" shoes-title="Nike Dunk Low" shoes-gender="Baby/Toddler Shoes" shoes-price="55"></shoes-card>
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/cc5e6eb6-b5a9-4402-b015-fa0519b4f7c8/dunk-low-big-kids-shoes-PKW4kS.png" shoes-title="Nike Dunk Low" shoes-gender="Big Kids Shoes" shoes-price="100"></shoes-card>
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/bb00ee1b-418e-44a1-9c05-bfbd0f67af8c/air-max-270-big-kids-shoes-8f50fT.png" shoes-title="Nike Air Max 270" shoes-gender="Big Kid's Shoes" shoes-price="130"></shoes-card>  
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/eee87dc3-012c-4a07-a2db-fb272b98233c/air-max-270-little-kids-shoes-81W8Fc.png" shoes-title="Nike Air Max 270" shoes-gender="Little Kid's Shoes" shoes-price="110"></shoes-card>  
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/b1778add-1da0-4891-b830-f5105b15ea56/air-jordan-1-high-og-big-kids-shoes-kwqPnW.png" shoes-title="Air Jordan 1 High OG" shoes-gender="Big Kid's Shoes" shoes-price="140"></shoes-card>  
+                    <shoes-card shoes-image="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_593,c_limit/fecba264-b8d4-41b3-bf91-c7235b673201/jordan-1-retro-high-og-little-kids-shoes-6P4b0q.png" shoes-title="Jordan 1 Retro High OG" shoes-gender="Little Kid's Shoes" shoes-price="85"></shoes-card>     
                 </div>
             </div>
         </div>

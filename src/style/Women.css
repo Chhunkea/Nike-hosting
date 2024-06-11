@@ -273,7 +273,59 @@ body {
 
   /* popular-shoes */
   .popular-shoes {
-      margin: 84px 48px 24px; /* Margin: top 0, right/left 48px, bottom 24px */
+    margin-top: 84px;
+  }
+
+  .popular-text {
+    margin-bottom: 12px;
+    padding-top: 2px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  /* horizontal-image-with-text-below */
+  .horizontal-scroll-container-text {
+    display: flex; 
+    overflow-x: auto; 
+    padding-left: 48px; 
+  }
+  
+  .image-with-text {
+    padding-bottom: 30px; 
+    margin-right: 10px;
+  }
+  
+  .image-with-text img {
+    max-width: 676px; 
+    height: auto;
+    margin-bottom: 10px; 
+  }
+  
+  .image-with-text h4,
+  .image-with-text h5,
+  .image-with-text h3 {
+    text-align: left; 
+  }
+  
+  @media (max-width: 768px) {
+    .horizontal-scroll-container-text {
+      overflow-x: auto;
+      padding-left: 48px; 
+    }
+  
+    .image-with-text {
+      margin-left: 5px;
+      margin-right: 0; 
+    }
+  
+    .image-with-text img {
+      width: 340px; 
+      max-width: none; 
+    }
+
+    .popular-text {
+      margin-left: 5px;
+    }
   }
 
   /* Member benefit */
