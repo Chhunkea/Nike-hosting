@@ -362,7 +362,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items:start;
-    margin-left: 50px;
+    margin-left: 30px;
     gap: 10px;
     margin-top: -50px;
     top: 0;
@@ -388,14 +388,14 @@ body {
   .footer2 {
   background-color: black;
   padding-top: 40px;
-  padding-left: 70px;
+  padding-left: 50px;
   padding-right: 40px;
   font-size: 12px;
   }
 
   .footer2-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 12px;
   }
 
@@ -441,6 +441,7 @@ body {
   .down-footer2 {
   color: white;
   display: flex;
+  justify-content: space-between;
   padding-left: 3vw;
   padding-right: 6px;
   padding-top: 12px;
@@ -462,7 +463,7 @@ body {
   .footer2-bottom-right ul {
   display: flex;
   margin: -50px;
-  margin-right: -2px;
+  margin-right: -10px;
   gap: 20px;
   }
 
@@ -482,7 +483,7 @@ body {
   display: flex;
   color: gray;
   list-style: none;
-  padding: 10px;
+  padding-bottom: 10px;
   margin: 0;
   gap: 20px;
   margin-top: -30px;
@@ -521,7 +522,7 @@ body {
   .footer2 > .container > .footer2-men > .footer2-container > .svg-icon-footer2 > ul > li {
     display: flex;
     position: relative;
-    left: -25%;
+    left: -22%;
     top: 20px;
   }
   
