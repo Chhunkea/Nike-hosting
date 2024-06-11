@@ -1,5 +1,66 @@
 # Convention guide:
 
+# **Goals :**
+
+Design Prototype and re-develop a user-friendly and visually captivating clone of the `Nike.com` frontend platform and ensures seamless compatibility across multiple devices and screen sizes.
+
+# Development Tools :
+
+- **`Visual Studio Code` (VS Code):** A powerful and versatile code editor that provides an excellent development environment with features like syntax highlighting, debugging support, and extensions for enhanced productivity.
+- **`GitLab`:** A web-based Git repository manager that offers version control, issue tracking, and continuous integration/continuous deployment (CI/CD) pipelines, facilitating collaborative software development.
+- **`Figma`:** An innovative design tool used for creating user interfaces, prototypes, and collaborative design projects.
+    
+# Project structure :
+![Project Structure](./asset/readme/folder.png)
+
+**Description:**
+
+- **`assets`:** a folder to store images and videos.
+- **`components`:**  a folder to store reusable components.
+- **`pages`:** stores each page that are responsible for.
+- **`src`:** a folder to store a bunch of stylize and JavaScript.
+- **`git-ignore`:** a file to store all the untracked files.
+- **`index.html`:** the file that represents the landing page of the website.
+
+# Comment rules:
+
+**Common comments rule**: Regardless of the file type, the comments must contain a prefix followed by a **‘ : ’** and then an explanation/description.  **e.g : Nav bar: Kids page.**
+
+# Coding-Global-color :
+
+- **pure-white:** #FFFFFF
+- black: #000000
+- **light-gray:** #707072
+- **red:** #9E3500
+- red-pork: #E7352B
+- purple: #8D429F
+- **orange:** #F36B26
+- **sky-blue:** #1790C8
+- brown: #825D41
+- Green: #7BBA3C
+- yellow: #FED533
+- pink: #F0728F
+
+# Version Control:
+
+![Project Structure](./asset/readme/gitflow.webp)
+
+# Commit Message :
+
+- **`Common commit rules`:** Commits must be detailed, stating the changes made along with a short and meaningful description of the changes.
+- **Commit prefixes:**
+- **`Init`:** when you initialize the workspace on a new branch.
+- **`Add`:** when adding a new functionality on a branch.
+- **`Modify`:** when fixing something on the bug fix/hotfix branch.
+
+**e.g : Merge: merging into the release branch with the bug fix/homepage branch**
+
+**e.g : Merge: merging into the release branch with the bug fix/homepage branch**
+
+# Issue naming convention :
+
+**Issue naming :** The issues must have the issue name followed by ‘:’ and then a description of the issue at hand.
+
 # Git-flow:
 
 1. Branch Naming:
@@ -48,3 +109,10 @@
     - Use **`const`** for variables that do not change their value, and **`let`** for variables that do.
     - Avoid using **`var`** as it has function scope, unlike **`const`** and **`let`** which have block scope.
     - Simplify class `iteration` using a concise loop to streamline repetitive tasks.
+    
+
+# Peer review comments :
+
+**Common comments rule:**
+
+- **Inline comments**: comments can be made on specific lines of code inside the peer review board.
