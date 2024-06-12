@@ -5,6 +5,24 @@ class footer extends HTMLElement {
     }
 
     connectedCallback() {
+
+            // Footer: Firstcolumns
+            const firstColumn = ["RESOURCES", "GIFT CARDS", "FIND A STORE", "BECOME A MEMBER", "NIKE X NBA", "NIKE JOURNAL", "Site Feedback"];
+            let firstColumnFooter = "";
+            for (let i in firstColumn) firstColumnFooter += `<h4 class="footer2-li text-slate-50"><a href="">${firstColumn[i]}</a></h4>`;
+
+            // Footer: Secondcolumns
+            const secondColumn = ["HELP", "ORDER TRACKING", "RETURNS", "Order Cancellation", "Payment Options", "Gift Card Balance", "Contatct Us"];
+            let secondColumnFooter = "";
+            for (let i in secondColumn) secondColumnFooter += `<li class="footer2-li"><a href="">${secondColumn[i]}</a></li>`;
+            
+            const thirdColumn = ["About Us", "Careers", "News", "Investors", "Sustainability"];
+            let thirdColumnFooter = "";
+            for (let i in thirdColumn) thirdColumnFooter += `<li class="footer2-li"><a href="">${thirdColumn[i]}</a></li>`;
+
+            const fourthColumn = ["Student", "Military", "Teacher", "First Responders", "Medical Professionals", "Birthday"];
+            let fourthColumnFooter = "";
+            for (let i in fourthColumn) fourthColumnFooter += `<li class="footer2-li"><a href="">${fourthColumn[i]}</a></li>`;
         this.innerHTML = `
         <footer>
         <!-- footer2 -->
@@ -16,13 +34,7 @@ class footer extends HTMLElement {
                     <!-- First div with 5 columns -->
                     <div class="footer2-class">
                     <ul class="footer2-ul">
-                        <h4 class="footer2-li text-slate-50"><a href="">RESOURCES</a></h4>
-                        <h4 class="footer2-li text-slate-50"><a href="">GIFT CARDS</a></h4>
-                        <h4 class="footer2-li text-slate-50"><a href="">FINDS A STORE</a></h4>
-                        <h4 class="footer2-li text-slate-50"><a href="">BECOME A MEMBER</a></h4>
-                        <h4 class="footer2-li text-slate-50"><a href="">NIKE X NBA</a></h4>
-                        <h4 class="footer2-li text-slate-50"><a href="">NIKE JOURNAL</a></h4>
-                        <h4 class="footer2-li text-slate-50"><a href="">Site Feedback</a></h4>
+                        ${firstColumnFooter}
                     </ul>
                     </div>
         
@@ -30,14 +42,7 @@ class footer extends HTMLElement {
                     <div class="footer2-class">
                     <ul class="footer2-ul">
                         <h4 class="footer2-li text-slate-50">HELP</h4>
-                        <li class="footer2-li">Get Help</li>
-                        <li class="footer2-li">Order Status</li>
-                        <li class="footer2-li">Shipping and Delivery</li>
-                        <li class="footer2-li">Returns</li>
-                        <li class="footer2-li">Order Cancellation</li>
-                        <li class="footer2-li">Payment Options</li>
-                        <li class="footer2-li">Gift Card Balance</li>
-                        <li class="footer2-li">Contatct Us</li>            
+                        ${secondColumnFooter}       
                     </ul>
                     </div>
         
@@ -45,25 +50,15 @@ class footer extends HTMLElement {
                     <div class="footer2-class">
                         <ul class="footer2-ul">
                         <h4 class="footer2-li text-slate-50">COMPANY</h4>
-                        <li class="footer2-li">About Nike</li>
-                        <li class="footer2-li">News</li>
-                        <li class="footer2-li">Careers</li>
-                        <li class="footer2-li">Investors</li>
-                        <li class="footer2-li">Purpose</li>
-                        <li class="footer2-li">Sustainability</li>
+                        ${thirdColumnFooter}
                         </ul>
                     </div>
         
                     <!-- Four div with 5 columns -->
                     <div class="footer2-class">
                         <ul class="footer2-ul">
-                        <li class="footer2-li text-slate-50">PROMOTIONS & DISCOUNTS</li>
-                        <li class="footer2-li">Student</li>
-                        <li class="footer2-li">Military</li>
-                        <li class="footer2-li">Teacher</li>
-                        <li class="footer2-li">First Responders &</li>
-                        <li class="footer2-li">Medical Professionals</li>
-                        <li class="footer2-li">Birthday</li>
+                        <h4 class="footer2-li text-slate-50">PROMOTIONS & DISCOUNTS</h4>
+                        ${fourthColumnFooter}
                         </ul>
                     </div>
         
@@ -80,7 +75,7 @@ class footer extends HTMLElement {
                 
                 <!-- United-state -->
                     <div class="privacy">
-                        <div class="down-footer2 md:pl-0 md:pr-0 md:ml-[-5px]">
+                        <div class="down-footer2  md:pl-0 md:pr-0 md:ml-[-5px]">
                             <div class="svg-location ml-[-10px] md:ml-1 flex mt-1 mb-[10px]">
                                 <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="18px" height="15px" fill="#FFFFF">
                                     <path fill="currentColor" fill-rule="evenodd" d="M4.5 9.001a7.5 7.5 0 1115 0c0 1.205-.385 2.576-.934 3.928-.555 1.364-1.302 2.767-2.08 4.055a39.918 39.918 0 01-2.307 3.405c-.688.905-1.316 1.632-1.711 1.947a.75.75 0 01-.936 0c-.395-.315-1.023-1.042-1.711-1.947a39.916 39.916 0 01-2.306-3.405c-.78-1.288-1.526-2.691-2.08-4.056-.55-1.351-.935-2.722-.935-3.927zM12 12.25a3.25 3.25 0 100-6.5 3.25 3.25 0 000 6.5z" clip-rule="evenodd"></path>
