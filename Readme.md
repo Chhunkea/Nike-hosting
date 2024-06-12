@@ -117,3 +117,21 @@ Design Prototype and re-develop a user-friendly and visually captivating clone o
 **Common comments rule:**
 
 - **Inline comments**: comments can be made on specific lines of code inside the peer review board.
+
+# Checkout link source 🫶🏻:
+
+- Figma (UI Screen, UI Prototype, Flow planning): https://www.figma.com/design/boEVi4Sr33VF3RH2NIhewi/Nike-project?node-id=0-1&t=CYa9Hz5rHmYXkt6J-1
+
+- IA: https://www.figma.com/board/0G1UPxnqD7nN5wPCP7n32N/Nike-Clone?node-id=0-1&t=cL42CifZrqyecqlp-1
+
+- Remote repo: https://git.clp.kr/anbschool/2nd/cybernexus/kim-chhunkea/nike-project.git
+
+- Convention guide: [https://pewter-cry-2c1.notion.site/Nike-project-Personal-Project-5b29ebd5c56943199d45d56b6cacd5cb?pvs=4]
+
+- Notion: https://www.notion.so/Daily-studying-8a4aef4d0655441e922d2b0eef109848?pvs=21
+
+# Credit to:
+
+Kim Chhunkea;
+
+ANB School.
