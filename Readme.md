@@ -1,7 +1,5 @@
 # Convention guide:
 
-![Project Structure](./asset/readme/swoosh-logo-black.jpeg)
-
 # **Goals :**
 
 Design Prototype and re-develop a user-friendly and visually captivating clone of the `Nike.com` frontend platform and ensures seamless compatibility across multiple devices and screen sizes.
@@ -13,7 +11,7 @@ Design Prototype and re-develop a user-friendly and visually captivating clone o
 - **`Figma`:** An innovative design tool used for creating user interfaces, prototypes, and collaborative design projects.
     
 # Project structure :
-![Project Structure](./asset/readme/folder.png)
+![Project Structure](./asset/readme/nike-banner.jpg)
 
 **Description:**
 
