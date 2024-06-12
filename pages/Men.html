@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike.Just Do It. Nike.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../src/style/Men.css">
+    <script src="../components/component-navbar.js" defer></script>
+    <script src="../components/component-footer.js" defer></script>
+    <script src="../components/feature.js" defer></script>
+    <script src="../components/shoesCard.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="https://www.nike.com/favicon.ico?v=1">
+    <script src="../src/script/Men.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar: Men -->
+    <component-navbar homePage="../index.html" newFeature="./new&feature.html" men="./Men.html" women="./Women.html" kid="./Kids.html"></component-navbar>
+  
+    <!-- Section: Hero -->
+    <section>
+        <div class="nav-men">
+            <h1 class="text-2xl"><a href="">Men</a></h1>
+            <div class="accessories-men md:flex hidden">
+                <ul><a href="">Shoes</a></ul>
+                <ul><a href="">Clothing</a></ul>
+                <ul><a href="">Accessories</a></ul>
+                <ul><a href="">Sale</a></ul>
+            </div>
+        </div>
+
+        <!-- Image: men(camaviga) -->
+        <div class="nav-menpic">
+            <div  class="image-men1">
+                <img src="../asset/men-image/men-pic1.jpeg" alt="">
+            </div>
+
+            <div class="text-nav-men">
+                <div class="text-men-center">
+                    <p>Step into the Unreal</p>
+                    <h3 class="text-5xl font-bold">AIR MAX DN</h3>
+                    <p class="mt-4">Dynamic Camaviga - everywhere all at once.</p>
+                    <button class="bg-black text-white py-1 px-3 rounded-full my-4">Shop</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image: three men pictures -->
+        <div class="three-men-imgae">
+            <div>
+                <h2 class="shop-essential mb-[8px] text-2xl">Shop the Essentials</h2>
+            </div>
+
+            <div>             
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="../asset/men-image/men2-image.jpeg" alt="Image 1">
+                        <div class="text-beside">Clothing</div>
+                    </div>
+
+                    <div class="grid-item">
+                        <img src="../asset/men-image/men3-image.jpeg" alt="Image 2">
+                        <div class="text-beside">Shoes</div>
+                    </div>
+
+                    <div class="grid-item">
+                        <img src="../asset/men-image/men4-image.jpeg" alt="Image 3">
+                        <div class="text-beside">Accessories</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
+        <!-- Image: Marathon-pic -->
+        <div>
+            <h2 class="marathon-text text-2xl">Marathon Speed Ahead</h2>
+            <div>
+                <div  class="image-men1 w-full">
+                    <img src="../asset/men-image/men-marathon-image.jpeg" alt="">
+                </div>
+                <div class="text-nav-men">
+                    <div class="text-men-center">
+                        <p>Nike Alphafly 3</p>
+                        <h3 class="text-5xl font-bold">LEAVE YOURSELF</h3>
+                        <h3 class="text-5xl font-bold">IN THE DUST</h3>
+                        <p class="mt-4">Stay fresh from start to mile 26.2 in the electric new colorway.</p>
+                        <button class="bg-black text-white py-1 px-3 rounded-full my-4">Shop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image: classic-spotlight -->
+        <div>
+            <div>
+                <h2 class="classic-shoes text-2xl">Classic Spotlight</h2>
+            </div>
+    
+            <div class="horizontal-scroll-container">
+                <img src="../asset/men-image/men-shoes1.jpeg" alt="Image shoes-1">
+                <img src="../asset/men-image/men-shoes2.jpeg" alt="Image shoes-2">
+                <img src="../asset/men-image/men-shoes3.jpeg" alt="Image shoes-3">
+                <img src="../asset/men-image/men-shoes4.jpeg" alt="Image shoes-4">
+                <img src="../asset/men-image/men-shoes5.jpeg" alt="Image shoes-5">
+            </div>
+        </div>
+
+        <!-- Image: Brook-favs -->
+        <div class="brook-favs">
+            <div>
+                <h2 class="brooks-fav-text text-2xl">Brooks Kopka's Favs</h2>
+                <div class="image-container">
+                    <div class="brook-image">
+                            <img src="../asset/men-image/brooks-image1.jpeg" alt="brook-playing golf">
+                        <div class="brook-texts px-[10px]">
+                            <h1 class="text-lg text-white">Brooks's Golf Essentials</h1>
+                            <button class="bg-black text-white py-1 px-3 rounded-full my-4">Shop </button>
+                        </div>
+                    </div>
+                    
+                    <div class="brook-image">
+                        <img src="../asset/men-image/brook-image2.jpeg" alt="brooks-picture">
+                        <div class="brook-texts">
+                            <h1 class="text-lg text-white">Brooks's Off-Course Picks</h1>
+                            <button class="bg-black text-white py-1 px-3 rounded-full my-4">Shop </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image: Popular-right-now-shoes -->
+        <div>
+            <div class="popular-shoes">
+                <h2 class="popular-text text-2xl">Popular Right Now</h2>
+                <div class="horizontal-scroll-container-text">
+                    <shoes-card shoes-image="../asset/men-image/men-shoes6.png" shoes-title="Ja 1 'Day'" shoes-gender="Baskeball Shoes" shoes-price="120"></shoes-card>
+                    <shoes-card shoes-image="../asset/men-image/men-shoes7.png" shoes-title="Nike Dunk Low Retro" shoes-gender="Men's Shoes" shoes-price="115"></shoes-card>
+                    <shoes-card shoes-image="../asset/men-image/men-shoes8.png" shoes-title="Air Jordan 5 Retro SE" shoes-gender="Men's Shoes" shoes-price="210"></shoes-card>
+                    <shoes-card shoes-image="../asset/men-image/men-shoes9.png" shoes-title="Nike Vaporfly 3" shoes-gender="Men's Road Racing Shoes" shoes-price="260"></shoes-card>
+                    <shoes-card shoes-image="../asset/men-image/men-shoes10.png" shoes-title="Nike Air Max Plus" shoes-gender="Men's Shoes" shoes-price="180"></shoes-card>
+                    <shoes-card shoes-image="../asset/men-image/men-shoes11.png" shoes-title="Nike Zoom Vomero 5" shoes-gender="Women's Shoes" shoes-price="160"></shoes-card>
+                    <shoes-card shoes-image="../asset/men-image/men-shoes12.png" shoes-title="Nike Air Force 1 '07" shoes-gender="Men's Shoes" shoes-price="115"></shoes-card>     
+                </div>
+            </div>
+        </div>
+      
+        <!-- Member Benefits -->
+        <div class="member-benefit">
+            <div>
+                <h2 class="text-2xl member-text-benefit">Member Benefits</h2>
+                <div class="member-text-image">
+                    <div class="image-container ">
+                        <div class="image-member">
+                            <img src="../asset/men-image/member-benefit-image1.jpeg" width="305.39" height="382.14">
+                            <div class="member-text">
+                                <h3 class="mb-2 text-lg text-white">Member Product</h3>
+                                <h1 class="title mb-7 text-lg text-white">Your Exclusive Access</h1>
+                                <button>Shop</button>
+                            </div>
+                        </div>
+
+                        <div class="image-member">
+                            <img src="../asset/men-image/member-benefit2.jpeg">
+                            <div class="member-text">
+                                <h3 class="mb-2 text-white text-lg">Member Rewards</h3>
+                                <h1 class="title mb-7 text-white text-lg">How We Say Thank You</h1>
+                                <button>Celebrate</button>
+                            </div>
+                        </div>
+
+                        <div class="image-member">
+                            <img src="../asset/men-image/member-benefit3.jpeg" width="305.39" height="382.14">
+                            <div class="member-text">
+                                <h3 class="mb-2 text-white text-lg">Sports & Wellness Apps</h3>
+                                <h1 class="title mb-7 text-lg text-white">Movement Where You're At</h1>
+                                <button>Move</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer: Men -->
+    <feature-nike></feature-nike>
+    <component-footer></component-footer>
+</body>
+</html>
