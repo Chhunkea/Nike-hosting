@@ -2,6 +2,7 @@
 
 # **Goals :**
 
+![Project Structure](./asset/readme/nike-banner.jpg)
 Design Prototype and re-develop a user-friendly and visually captivating clone of the `Nike.com` frontend platform and ensures seamless compatibility across multiple devices and screen sizes.
 
 # Development Tools :
@@ -11,7 +12,6 @@ Design Prototype and re-develop a user-friendly and visually captivating clone o
 - **`Figma`:** An innovative design tool used for creating user interfaces, prototypes, and collaborative design projects.
     
 # Project structure :
-![Project Structure](./asset/readme/nike-banner.jpg)
 
 **Description:**
 
