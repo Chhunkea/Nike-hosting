@@ -3,6 +3,7 @@
 # **Goals :**
 
 ![Project Structure](./asset/readme/nike-banner.jpg)
+
 Design Prototype and re-develop a user-friendly and visually captivating clone of the `Nike.com` frontend platform and ensures seamless compatibility across multiple devices and screen sizes.
 
 # Development Tools :
