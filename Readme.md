@@ -1,5 +1,7 @@
 # Convention guide:
 
+![Project Structure](./asset/readme/swoosh-logo-black.jpeg)
+
 # **Goals :**
 
 Design Prototype and re-develop a user-friendly and visually captivating clone of the `Nike.com` frontend platform and ensures seamless compatibility across multiple devices and screen sizes.
